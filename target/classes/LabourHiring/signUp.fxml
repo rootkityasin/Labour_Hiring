@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="450.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LabourHiring.signUpController">
+   <children>
+      <ImageView fx:id="backgroundPicture" fitHeight="500.0" fitWidth="700.0" nodeOrientation="INHERIT" opacity="0.73" pickOnBounds="true" preserveRatio="true">
+         <viewport>
+            <Rectangle2D width="10.0" />
+         </viewport>
+         <cursor>
+            <Cursor fx:constant="V_RESIZE" />
+         </cursor>
+         <image>
+            <Image url="@Project Image/sig.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="signUpLogo" fitHeight="50.0" fitWidth="45.0" layoutX="333.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Project Image/signupUserLogo.png" />
+         </image></ImageView>
+      <Label fx:id="createAccountLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="287.0" layoutY="75.0" text="Create a Account">
+         <font>
+            <Font name="BM DoHyeon OTF" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="userNameTextfield" alignment="CENTER" layoutX="221.0" layoutY="165.0" onKeyPressed="#onActionNameField" prefHeight="30.0" prefWidth="270.0" promptText="Enter Your Full Name">
+         <font>
+            <Font size="14.0" />
+         </font></TextField>
+      <ImageView fx:id="userNameLogo" fitHeight="26.0" fitWidth="24.0" layoutX="196.0" layoutY="168.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Project Image/icons8-user-50.png" />
+         </image></ImageView>
+      <TextField fx:id="userEmailTextfield" alignment="CENTER" layoutX="221.0" layoutY="216.0" onKeyPressed="#onActionEmailField" prefHeight="30.0" prefWidth="270.0" promptText="Enter Your Email">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="userPassTextfield" alignment="CENTER" layoutX="221.0" layoutY="268.0" onKeyPressed="#onActionPassField" prefHeight="30.0" prefWidth="270.0" promptText="Enter New  Password">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <ImageView fx:id="userEmailLogo" fitHeight="26.0" fitWidth="24.0" layoutX="196.0" layoutY="216.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Project Image/email.png" />
+         </image></ImageView>
+      <ImageView fx:id="userPassLogo" fitHeight="26.0" fitWidth="24.0" layoutX="196.0" layoutY="271.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Project Image/key.png" />
+         </image></ImageView>
+      <ChoiceBox fx:id="choiceBox" layoutX="356.0" layoutY="327.0" opacity="0.68" prefHeight="30.0" prefWidth="90.0" style="-fx-background-color: Honeydew; -fx-background-position: center;" />
+      <Button fx:id="signUpButton" layoutX="305.0" layoutY="394.0" mnemonicParsing="false" onAction="#onActionsignUp" prefHeight="30.0" prefWidth="90.0" text="Sign Up">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+      <Button fx:id="backButton" layoutX="614.0" layoutY="23.0" mnemonicParsing="false" onAction="#onActionBackButton" prefWidth="70.0" text="Back&lt;-">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label fx:id="signupCatagory" alignment="CENTER" layoutX="242.0" layoutY="327.0" prefHeight="30.0" prefWidth="118.0" style="-fx-background-color: white; -fx-font-weight: bold;" text="Choose Catagory" textFill="#180303">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="signUpLabel" alignment="CENTER" layoutX="266.0" layoutY="118.0" prefHeight="30.0" prefWidth="168.0" text="Please Enter Login Information" />
+   </children>
+</AnchorPane>
