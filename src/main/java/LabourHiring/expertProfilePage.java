@@ -13,7 +13,6 @@ public class expertProfilePage extends Application {
     public void start(Stage stage) throws Exception {
         Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("expertProfilePage.fxml")));
         Scene scene = new Scene(root);
-        // primaryStage.setFullScreen(true);
         stage.setTitle("Expert Profile");
         stage.setScene(scene);
         stage.show();

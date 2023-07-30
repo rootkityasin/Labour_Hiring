@@ -1,14 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="LabourHiring.expertProfilePageController"
-            prefHeight="400.0" prefWidth="600.0">
-
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LabourHiring.expertProfilePageController">
+   <children>
+      <Text fx:id="text1" layoutX="14.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Your Full Name1" />
+      <Text fx:id="text2" layoutX="307.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Your Email 2" />
+      <Text fx:id="text3" layoutX="14.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Your Phone Number3" />
+      <Text fx:id="text4" layoutX="307.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Zip Code :" />
+      <Text fx:id="text5" layoutX="307.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address5" />
+      <Text fx:id="text6" layoutX="14.0" layoutY="191.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Town / City" wrappingWidth="67.40087890625" />
+      <TextField fx:id="expertName" layoutX="10.0" layoutY="50.0" prefHeight="31.0" prefWidth="286.0" />
+      <TextField fx:id="expertEmail" layoutX="307.0" layoutY="50.0" prefHeight="31.0" prefWidth="286.0" />
+      <TextField fx:id="expertPhoneNum" layoutX="14.0" layoutY="120.0" prefHeight="31.0" prefWidth="268.0" />
+      <TextField fx:id="expertDetailsAddress" layoutX="307.0" layoutY="118.0" prefHeight="66.0" prefWidth="268.0" />
+      <ChoiceBox fx:id="cityChoiceBox" layoutX="14.0" layoutY="195.0" prefWidth="150.0" />
+      <TextField fx:id="zipField" layoutX="307.0" layoutY="208.0" />
+      <Button fx:id="saveButton" layoutX="163.0" layoutY="286.0" mnemonicParsing="false" onAction="#onActionSaveButton" prefHeight="26.0" prefWidth="86.0" text="Save" />
+      <Button fx:id="editButton" layoutX="307.0" layoutY="286.0" mnemonicParsing="false" onAction="#onActionEditButton" prefHeight="26.0" prefWidth="86.0" text="Edit" />
+      <Button fx:id="BackButton" layoutX="239.0" layoutY="335.0" mnemonicParsing="false" onAction="#onActionBackButton" prefHeight="26.0" prefWidth="86.0" text="Back" />
+   </children>
 </AnchorPane>
