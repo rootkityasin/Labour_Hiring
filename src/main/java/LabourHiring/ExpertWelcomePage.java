@@ -8,21 +8,19 @@ import javafx.stage.Stage;
 
 import java.util.Objects;
 
-public class UserWelcomePage extends Application {
-
-
+public class ExpertWelcomePage extends Application {
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("UserWelcomePage.fxml")));
+
+        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("ExpertWelcomePage.fxml")));
         Scene scene = new Scene(root);
-        // primaryStage.setFullScreen(true);
-        stage.setTitle("Welcome User");
+        stage.setTitle("Welcome As An Expert");
         stage.setScene(scene);
+        //primaryStage.setResizable(false);
         stage.show();
     }
 
     public static void main(String[] args) {
-
         launch(args);
     }
 }

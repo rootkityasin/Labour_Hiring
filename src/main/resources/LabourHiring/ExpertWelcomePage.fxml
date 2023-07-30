@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane accessibleRole="BUTTON" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: none;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LabourHiring.ExpertWelcomePageController">
+    <children>
+        <SplitPane fx:id="panel1" prefHeight="400.0" prefWidth="182.0" style="-fx-background-color: skyblue;" />
+        <Button fx:id="logoutButton" layoutX="35.0" layoutY="342.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="89.0" style="-fx-background-color: SteelBlue;" text="Log Out" textFill="#3b3939" />
+        <Circle fx:id="profilePicCircle" fill="#98bde1" layoutX="80.0" layoutY="62.0" opacity="0.94" radius="33.0" smooth="false" stroke="BLACK" strokeLineCap="ROUND" strokeType="INSIDE" strokeWidth="0.0" />
+        <ImageView fx:id="profileImage" fitHeight="45.0" fitWidth="59.0" layoutX="58.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@Project Image/userIconEmailtextField.png" />
+            </image>
+        </ImageView>
+        <Button fx:id="userProfileButton" layoutX="41.0" layoutY="105.0" mnemonicParsing="false" onAction="#onActionInProfileButton" style="-fx-background-color: SteelBlue;" text="Expert Profile" />
+      <Text layoutX="228.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" text="hi" wrappingWidth="52.0972900390625" />
+    </children>
+</AnchorPane>
