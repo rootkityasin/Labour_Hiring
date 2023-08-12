@@ -14,7 +14,11 @@ public class userProfilePageController {
 
     @FXML
     private Button editButton;
+    @FXML
+    private Button chooseArea;
 
+    @FXML
+    private Button chooseWorker;
     @FXML
     private TextField fullAddress;
 

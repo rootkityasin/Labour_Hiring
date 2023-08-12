@@ -20,12 +20,6 @@ public class UserWelcomePageController {
     private ChoiceBox<?> choiceBoxWorker;
 
     @FXML
-    private TextField chooseArea;
-
-    @FXML
-    private TextField chooseWorker;
-
-    @FXML
     private Button logoutButton;
 
     @FXML
@@ -41,6 +35,14 @@ public class UserWelcomePageController {
     private Button userProfileButton;
 
     @FXML
+    private Button chooseArea;
+
+    @FXML
+    private Button chooseWorker;
+
+
+
+    @FXML
     void onActionInProfileButton(ActionEvent event) {
 
     }
@@ -52,6 +54,15 @@ public class UserWelcomePageController {
 
     @FXML
     void onActionSearchButton(ActionEvent event) {
+
+    }
+    @FXML
+    void onActionchooseArea(ActionEvent event) {
+
+    }
+
+    @FXML
+    void onActionchooseWorker(ActionEvent event) {
 
     }
 }
