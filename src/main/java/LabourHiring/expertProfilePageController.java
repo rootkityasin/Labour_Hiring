@@ -20,6 +20,9 @@ public class expertProfilePageController {
     private ChoiceBox<?> cityChoiceBox;
 
     @FXML
+    private ChoiceBox<?> areaChoiceBox1;
+
+    @FXML
     private Button editButton;
 
     @FXML
