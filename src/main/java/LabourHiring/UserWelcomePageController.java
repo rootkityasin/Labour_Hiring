@@ -13,15 +13,28 @@ import java.io.IOException;
 public class UserWelcomePageController {
     @FXML
     private Button SearchButton;
+    @FXML
+    private ImageView bacgroundImage;
 
     @FXML
     private ChoiceBox<?> choiceBoxLocation;
 
     @FXML
-    private ChoiceBox<?> choiceBoxWorker;
+    private Button logoutButton;
+    @FXML
+    private RadioButton radiobuttonCarpenter;
 
     @FXML
-    private Button logoutButton;
+    private RadioButton radiobuttonElectrician;
+
+    @FXML
+    private RadioButton radiobuttonGardener;
+
+    @FXML
+    private RadioButton radiobuttonMechanic;
+
+    @FXML
+    private RadioButton radiobuttonPainter;
 
     @FXML
     private SplitPane panel1;

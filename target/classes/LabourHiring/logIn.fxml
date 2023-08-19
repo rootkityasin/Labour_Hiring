@@ -15,7 +15,7 @@
    <children>
       <ImageView fx:id="emailIcon" fitHeight="510.0" fitWidth="700.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@Project Image/pexels-andreea-ch-1166644.jpg" />
+            <Image url="@Project Image/loginP.jpeg" />
          </image>
       </ImageView>
       <TextField fx:id="userEmail" alignment="CENTER" layoutX="221.0" layoutY="165.0" onKeyPressed="#onActionEmailText" prefHeight="30.0" prefWidth="270.0" promptText="User Email">
