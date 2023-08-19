@@ -24,6 +24,6 @@
       <Button fx:id="editButton" layoutX="307.0" layoutY="286.0" mnemonicParsing="false" onAction="#onActionEditButton" prefHeight="26.0" prefWidth="86.0" text="Edit" />
       <Button fx:id="BackButton" layoutX="239.0" layoutY="335.0" mnemonicParsing="false" onAction="#onActionBackButton" prefHeight="26.0" prefWidth="86.0" text="Back" />
       <ChoiceBox fx:id="areaChoiceBox1" layoutX="307.0" layoutY="208.0" prefWidth="150.0" />
-      <Label fx:id="outputTextLabel" layoutX="194.0" layoutY="251.0" prefHeight="26.0" prefWidth="176.0" />
+      <Label fx:id="outputTextLabel" layoutX="134.0" layoutY="249.0" prefHeight="26.0" prefWidth="307.0" />
    </children>
 </AnchorPane>
