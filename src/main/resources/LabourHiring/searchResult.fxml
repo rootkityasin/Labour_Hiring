@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LabourHiring.searchResultController">
+   <children>
+      <Label fx:id="lable1" contentDisplay="CENTER" layoutX="123.0" layoutY="31.0" prefHeight="43.0" prefWidth="355.0" style="-fx-background-color: skyblue; -fx-background-radius: 10px;" text="Available Eexpertise" textAlignment="CENTER" underline="true">
+         <font>
+            <Font name="BM HANNA Air OTF" size="40.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
