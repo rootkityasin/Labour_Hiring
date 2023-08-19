@@ -4,10 +4,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
-import javafx.scene.control.Button;
-import javafx.scene.control.ChoiceBox;
-import javafx.scene.control.SplitPane;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.scene.image.ImageView;
 import javafx.scene.shape.Circle;
 
@@ -39,10 +36,10 @@ public class UserWelcomePageController {
     private Button userProfileButton;
 
     @FXML
-    private Button chooseArea;
+    private Label chooseArea;
 
     @FXML
-    private Button chooseWorker;
+    private Label chooseWorker;
 
 
 

@@ -51,7 +51,10 @@ public class ExpertWelcomePageController {
             profileDetailsPage();
     }
 
-    void blackLoginPage() {
+
+    @FXML
+    void onActionLogout(ActionEvent event) {
+
         try {
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("logIn.fxml"));
             Parent root1 = fxmlLoader.load();
@@ -59,10 +62,6 @@ public class ExpertWelcomePageController {
         } catch (IOException e) {
             e.printStackTrace();
         }
-    }
-    @FXML
-    void onActionLogout(ActionEvent event) {
-            blackLoginPage();
     }
 
     @FXML
