@@ -13,7 +13,7 @@
    <children>
       <ImageView fx:id="backgroundPicture" fitHeight="400.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@Project%20Image/rsz_1pawel-czerwinski-qiy4hr18ags-unsplash.jpg" />
+            <Image url="@Project Image/rsz_1pawel-czerwinski-qiy4hr18ags-unsplash.jpg" />
          </image>
       </ImageView>
       <ImageView fx:id="signUpLogo" fitHeight="50.0" fitWidth="45.0" layoutX="282.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">

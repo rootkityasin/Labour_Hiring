@@ -5,10 +5,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
-import javafx.scene.control.Button;
-import javafx.scene.control.ChoiceBox;
-import javafx.scene.control.Label;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.scene.text.Text;
 
 import java.io.IOException;
@@ -63,6 +60,23 @@ public class expertProfilePageController implements Initializable {
 
     @FXML
     private Text text6;
+    @FXML
+    private Label label1;
+
+    @FXML
+    private RadioButton radioboxCarpenter;
+
+    @FXML
+    private RadioButton radioboxElectrician;
+
+    @FXML
+    private RadioButton radioboxGardener;
+
+    @FXML
+    private RadioButton radioboxMechanic;
+
+    @FXML
+    private RadioButton radioboxPainter;
 
     @FXML
     private TextField zipField;

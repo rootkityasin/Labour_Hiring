@@ -19,16 +19,7 @@ public class userProfilePageController {
     @FXML
     private Button editButton;
     @FXML
-    private Button chooseArea;
-
-    @FXML
-    private Button chooseWorker;
-    @FXML
     private TextField fullAddress;
-
-    @FXML
-    private ChoiceBox<?> locationChoose;
-
     @FXML
     private Button saveButton;
 
@@ -58,9 +49,6 @@ public class userProfilePageController {
 
     @FXML
     private TextField userPhnNumber;
-
-    @FXML
-    private TextField zipCode;
 
     @FXML
     void onActionBackButton(ActionEvent event) {
