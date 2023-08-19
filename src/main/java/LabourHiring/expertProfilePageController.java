@@ -119,20 +119,25 @@ public class expertProfilePageController implements Initializable {
         DatabaseConnection connect_project = new DatabaseConnection();
         Connection connect_database = connect_project.getConnection();
 
-        try {
-            String insertExpertDB="SET sql_mode='STRICT_ALL_TABLES'";
+        String phone_num = expertPhoneNum.getText();
 
-            insertExpertDB = "INSERT INTO workerinfo(name,email,phone,address,city,area) VALUES('" + expertName.getText() + "','" + expertEmail.getText() + "','" + expertPhoneNum.getText() + "','" + expertDetailsAddress.getText() + "','" + cityChoiceBox.getValue() + "','" + areaChoiceBox1.getValue() + "')";
+        if (phone_num.length() == 11) {
 
-            Statement statement = connect_database.createStatement();
-            statement.executeUpdate(insertExpertDB);
+            try {
+                String insertExpertDB = "SET sql_mode='STRICT_ALL_TABLES'";
+                Statement statement = connect_database.createStatement();
+                statement.executeUpdate(insertExpertDB);
+                insertExpertDB = "INSERT INTO workerinfo(name,email,phone,address,city,area) VALUES('" + expertName.getText() + "','" + expertEmail.getText() + "','" + expertPhoneNum.getText() + "','" + expertDetailsAddress.getText() + "','" + cityChoiceBox.getValue() + "','" + areaChoiceBox1.getValue() + "')";
+                statement.executeUpdate(insertExpertDB);
+                outputTextLabel.setText("Your Profile is Now complete");
 
-            outputTextLabel.setText("Your Profile is Now complete");
+            } catch (Exception e) {
+                e.printStackTrace();
+                outputTextLabel.setText("Invalid Input.Please Fill all Requirements");
+            }
 
-        } catch (Exception e) {
-            e.printStackTrace();
-            outputTextLabel.setText("Invalid Input.Please Fill all Requirements");
+        }else {
+            outputTextLabel.setText("Phone number should 11 digits.");
         }
-
     }
     }
