@@ -147,11 +147,10 @@ public class loginController {
 
             @FXML
             void onActionSignupButton (ActionEvent event){
-
                 try {
                     FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("signUp.fxml"));
-                    Parent root = fxmlLoader.load();
-                    SignUp.getScene().setRoot(root);
+                    Parent root2 = fxmlLoader.load();
+                    SignUp.getScene().setRoot(root2);
                 } catch (IOException e) {
                     e.printStackTrace();
                 }

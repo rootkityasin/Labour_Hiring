@@ -16,8 +16,6 @@ public class userProfilePage extends Application {
         stage.setTitle("Welcome To User Profile");
         stage.setScene(scene);
         stage.show();
-        //primaryStage1.setResizable(false);
-
     }
 
     public static void main(String[] args) {
