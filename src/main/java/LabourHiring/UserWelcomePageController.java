@@ -48,6 +48,13 @@ public class UserWelcomePageController {
 
     @FXML
     void onActionInProfileButton(ActionEvent event) {
+        try {
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("userProfilePage.fxml"));
+            Parent root1 = fxmlLoader.load();
+            userProfileButton.getScene().setRoot(root1);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
     }
 
