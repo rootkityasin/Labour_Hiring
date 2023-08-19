@@ -96,8 +96,16 @@ public class expertProfilePageController implements Initializable {
 
         cityChoiceBox.getItems().addAll(city_names);
         areaChoiceBox1.getItems().addAll(area_names);
+        cityChoiceBox.setOnAction(this::choicebox);
 
     }
+
+    public void choicebox(ActionEvent event){
+       String choosedcity= cityChoiceBox.getValue();
+        String choosedarea= cityChoiceBox.getValue();
+
+    }
+
 
     @FXML
     void onActionSaveButton(ActionEvent event) {
