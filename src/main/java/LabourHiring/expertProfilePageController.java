@@ -23,10 +23,10 @@ public class expertProfilePageController implements Initializable {
     private Button BackButton;
 
     @FXML
-    private ChoiceBox<?> cityChoiceBox;
+    private ChoiceBox<String> cityChoiceBox;
 
     @FXML
-    private ChoiceBox<?> areaChoiceBox1;
+    private ChoiceBox<String> areaChoiceBox1;
 
     @FXML
     private Button editButton;
