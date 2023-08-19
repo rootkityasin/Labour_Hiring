@@ -51,7 +51,7 @@ public class UserWelcomePageController {
         try {
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("userProfilePage.fxml"));
             Parent root1 = fxmlLoader.load();
-            userProfileButton.getScene().setRoot(root1);
+           userProfileButton.getScene().setRoot(root1);
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -60,7 +60,13 @@ public class UserWelcomePageController {
 
     @FXML
     void onActionLogoutButton(ActionEvent event) {
-
+        try {
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("logIn.fxml"));
+            Parent root1 = fxmlLoader.load();
+            logoutButton.getScene().setRoot(root1);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     @FXML

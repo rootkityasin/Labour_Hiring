@@ -2,10 +2,14 @@ package LabourHiring;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
 import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.TextField;
 import javafx.scene.text.Text;
+
+import java.io.IOException;
 
 public class userProfilePageController {
 
@@ -60,6 +64,13 @@ public class userProfilePageController {
 
     @FXML
     void onActionBackButton(ActionEvent event) {
+        try {
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("UserWelcomePage.fxml"));
+            Parent root1 = fxmlLoader.load();
+            backButton.getScene().setRoot(root1);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
     }
 
