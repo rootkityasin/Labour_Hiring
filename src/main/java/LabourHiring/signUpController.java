@@ -89,11 +89,6 @@ public class signUpController implements Initializable {
 
     @FXML
     void onActionBackButton(ActionEvent event) {
-
-        blackLoginPage();
-    }
-
-    void blackLoginPage() {
         try {
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("logIn.fxml"));
             Parent root1 = fxmlLoader.load();
@@ -102,6 +97,7 @@ public class signUpController implements Initializable {
             e.printStackTrace();
         }
     }
+
 
 
     @Override

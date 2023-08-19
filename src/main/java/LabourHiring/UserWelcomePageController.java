@@ -4,10 +4,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
-import javafx.scene.control.Button;
-import javafx.scene.control.ChoiceBox;
-import javafx.scene.control.SplitPane;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.scene.image.ImageView;
 import javafx.scene.shape.Circle;
 
@@ -39,21 +36,34 @@ public class UserWelcomePageController {
     private Button userProfileButton;
 
     @FXML
-    private Button chooseArea;
+    private Label chooseArea;
 
     @FXML
-    private Button chooseWorker;
+    private Label chooseWorker;
 
 
 
     @FXML
     void onActionInProfileButton(ActionEvent event) {
+        try {
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("userProfilePage.fxml"));
+            Parent root1 = fxmlLoader.load();
+           userProfileButton.getScene().setRoot(root1);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
     }
 
     @FXML
     void onActionLogoutButton(ActionEvent event) {
-
+        try {
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("logIn.fxml"));
+            Parent root1 = fxmlLoader.load();
+            logoutButton.getScene().setRoot(root1);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     @FXML
