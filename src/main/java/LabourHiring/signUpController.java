@@ -114,7 +114,6 @@ public class signUpController implements Initializable {
     @FXML
     void onActionsignUp(ActionEvent event) {
 
-
         signUpDB();
     }
 

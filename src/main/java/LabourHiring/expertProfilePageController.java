@@ -3,15 +3,21 @@ package LabourHiring;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
+import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.text.Text;
 
 import java.io.IOException;
+import java.net.URL;
+import java.sql.Connection;
+import java.sql.Statement;
+import java.util.ResourceBundle;
 
-public class expertProfilePageController {
+public class expertProfilePageController implements Initializable {
 
     @FXML
     private Button BackButton;
@@ -61,6 +67,12 @@ public class expertProfilePageController {
     @FXML
     private TextField zipField;
 
+    @FXML
+    private Label outputTextLabel;
+
+    private final String[] city_names = {"Dhaka", "Barishal", "Noakhali"};
+    private final String[] area_names = {"Tejgaon", "Notunbazar", "Badda"};
+
 
     @FXML
     void onActionBackButton(ActionEvent event) {
@@ -78,9 +90,41 @@ public class expertProfilePageController {
 
     }
 
-    @FXML
-    void onActionSaveButton(ActionEvent event) {
+
+    @Override
+    public void initialize(URL location, ResourceBundle resources) {
+
+        cityChoiceBox.getItems().addAll(city_names);
+        areaChoiceBox1.getItems().addAll(area_names);
 
     }
 
-}
+    @FXML
+    void onActionSaveButton(ActionEvent event) {
+        expertProfileDB();
+
+    }
+
+    public void expertProfileDB() {
+
+        //connecting DB using DatabaseConnection class
+        DatabaseConnection connect_project = new DatabaseConnection();
+        Connection connect_database = connect_project.getConnection();
+
+        try {
+            String insertExpertDB="SET sql_mode='STRICT_ALL_TABLES'";
+
+            insertExpertDB = "INSERT INTO workerinfo(name,email,phone,address,city,area) VALUES('" + expertName.getText() + "','" + expertEmail.getText() + "','" + expertPhoneNum.getText() + "','" + expertDetailsAddress.getText() + "','" + cityChoiceBox.getValue() + "','" + areaChoiceBox1.getValue() + "')";
+
+            Statement statement = connect_database.createStatement();
+            statement.executeUpdate(insertExpertDB);
+
+            outputTextLabel.setText("Your Profile is Now complete");
+
+        } catch (Exception e) {
+            e.printStackTrace();
+            outputTextLabel.setText("Invalid Input.Please Fill all Requirements");
+        }
+
+    }
+    }

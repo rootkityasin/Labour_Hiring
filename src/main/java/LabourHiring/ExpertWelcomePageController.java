@@ -6,7 +6,9 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.control.Button;
 import javafx.scene.control.SplitPane;
+import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
+import javafx.scene.layout.AnchorPane;
 import javafx.scene.shape.Circle;
 
 import java.io.IOException;
@@ -27,6 +29,13 @@ public class ExpertWelcomePageController {
 
     @FXML
     private Circle profilePicCircle;
+    @FXML
+    private AnchorPane onAnchor;
+    @FXML
+    private Button messageSendButton;
+
+    @FXML
+    private TextField messageTextField;
 
     void profileDetailsPage() {
         try {
@@ -54,6 +63,15 @@ public class ExpertWelcomePageController {
     @FXML
     void onActionLogout(ActionEvent event) {
             blackLoginPage();
+    }
+
+    @FXML
+    void onActionmessageTextField(ActionEvent event) {
+
+    }
+    @FXML
+    void onActionMessageSendButton(ActionEvent event) {
+
     }
 
 }
