@@ -134,6 +134,9 @@ public class loginController {
                 if (adminRadioButton.isSelected()){
                     if (queryResult.getInt(1) == 1) {
                         message_label.setText("Welcome!");
+                        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("adminWelcomePage.fxml"));
+                        Parent root1 = fxmlLoader.load();
+                        login.getScene().setRoot(root1);
                     } else {
                         message_label.setText("Wrong Username or Password. Please try again.");
                     }
@@ -142,6 +145,9 @@ public class loginController {
                 else if(userRadioButton.isSelected()){
                     if (queryResult.getInt(1) == 1) {
                         message_label.setText("Welcome!");
+                        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("UserWelcomePage.fxml"));
+                        Parent root1 = fxmlLoader.load();
+                        login.getScene().setRoot(root1);
                     } else {
                         message_label.setText("Wrong Username or Password. Please try again.");
                     }
@@ -150,6 +156,9 @@ public class loginController {
                 else if(workerRadioButton.isSelected()){
                     if (queryResult.getInt(1) == 1) {
                         message_label.setText("Welcome!");
+                        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("ExpertWelcomePage.fxml"));
+                        Parent root1 = fxmlLoader.load();
+                        login.getScene().setRoot(root1);
                     } else {
                         message_label.setText("Wrong Username or Password. Please try again.");
                     }
