@@ -16,11 +16,11 @@
             <Image url="@Project Image/rsz_1pawel-czerwinski-qiy4hr18ags-unsplash.jpg" />
          </image>
       </ImageView>
-      <ImageView fx:id="signUpLogo" fitHeight="50.0" fitWidth="45.0" layoutX="282.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="signUpLogo" fitHeight="50.0" fitWidth="45.0" layoutX="251.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@Project Image/signupUserLogo.png" />
          </image></ImageView>
-      <Label fx:id="createAccountLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="251.0" layoutY="67.0" text="Create a Account">
+      <Label fx:id="createAccountLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="203.0" layoutY="67.0" text="Create a Account">
          <font>
             <Font name="BM DoHyeon OTF" size="18.0" />
          </font>
@@ -66,6 +66,6 @@
             <Font size="14.0" />
          </font>
       </Label>
-      <Label fx:id="signUpLabel" alignment="CENTER" layoutX="235.0" layoutY="103.0" prefHeight="30.0" prefWidth="168.0" text="Please Enter Login Information" />
+      <Label fx:id="signUpLabel" alignment="CENTER" layoutX="198.0" layoutY="107.0" prefHeight="30.0" prefWidth="168.0" text="Please Enter Login Information" />
    </children>
 </AnchorPane>
