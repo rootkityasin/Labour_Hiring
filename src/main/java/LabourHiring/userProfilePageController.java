@@ -5,11 +5,13 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.control.Button;
-import javafx.scene.control.ChoiceBox;
+import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.text.Text;
 
 import java.io.IOException;
+import java.sql.Connection;
+import java.sql.Statement;
 
 public class userProfilePageController {
 
@@ -51,6 +53,9 @@ public class userProfilePageController {
     private TextField userPhnNumber;
 
     @FXML
+    private Label outputTextLabel;
+
+    @FXML
     void onActionBackButton(ActionEvent event) {
         try {
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("UserWelcomePage.fxml"));
@@ -69,7 +74,35 @@ public class userProfilePageController {
 
     @FXML
     void onActionSaveButton(ActionEvent event) {
+        userProfileDB();
+    }
 
+    public void userProfileDB() {
+
+        //connecting DB using DatabaseConnection class
+        DatabaseConnection connect_project = new DatabaseConnection();
+        Connection connect_database = connect_project.getConnection();
+
+        String phone_num = userPhnNumber.getText();
+
+       // if (phone_num.length() == 11) {
+
+            try {
+                String insertExpertDB = "SET sql_mode='STRICT_ALL_TABLES'";
+                Statement statement = connect_database.createStatement();
+                statement.executeUpdate(insertExpertDB);
+                insertExpertDB = "INSERT INTO userinfo(name,email,phone,address) VALUES('" + useName.getText() + "','" + userEmail.getText() + "','" + userPhnNumber.getText() + "','" + fullAddress.getText() + "')";
+                statement.executeUpdate(insertExpertDB);
+                outputTextLabel.setText("Your Profile is Now complete");
+
+            } catch (Exception e) {
+                e.printStackTrace();
+                outputTextLabel.setText("Invalid Input.Please Fill all Requirements");
+            }
+
+       // }else {
+       //     outputTextLabel.setText("Phone number should 11 digits.");
+        // }
     }
 
 }

@@ -133,15 +133,29 @@ public class expertProfilePageController implements Initializable {
         DatabaseConnection connect_project = new DatabaseConnection();
         Connection connect_database = connect_project.getConnection();
 
+
+
         String phone_num = expertPhoneNum.getText();
 
-        if (phone_num.length() == 11) {
+      //  if (phone_num.length() == 11) {
 
             try {
+                String worker_category = null;
+                if(radioboxCarpenter.isSelected()){
+                    worker_category="carpenter";
+                } else if (radioboxElectrician.isSelected()) {
+                    worker_category="electrician";
+                }else if (radioboxGardener.isSelected()) {
+                    worker_category="gardener";
+                }else if (radioboxMechanic.isSelected()) {
+                    worker_category="mechanic";
+                }else if (radioboxPainter.isSelected()) {
+                    worker_category="painter";
+                }
                 String insertExpertDB = "SET sql_mode='STRICT_ALL_TABLES'";
                 Statement statement = connect_database.createStatement();
                 statement.executeUpdate(insertExpertDB);
-                insertExpertDB = "INSERT INTO workerinfo(name,email,phone,address,city,area) VALUES('" + expertName.getText() + "','" + expertEmail.getText() + "','" + expertPhoneNum.getText() + "','" + expertDetailsAddress.getText() + "','" + cityChoiceBox.getValue() + "','" + areaChoiceBox1.getValue() + "')";
+                insertExpertDB = "INSERT INTO workerinfo(name,email,phone,address,city,area,workercategory) VALUES('" + expertName.getText() + "','" + expertEmail.getText() + "','" + expertPhoneNum.getText() + "','" + expertDetailsAddress.getText() + "','" + cityChoiceBox.getValue() + "','" + areaChoiceBox1.getValue() + "','"+ worker_category +"')";
                 statement.executeUpdate(insertExpertDB);
                 outputTextLabel.setText("Your Profile is Now complete");
 
@@ -150,8 +164,8 @@ public class expertProfilePageController implements Initializable {
                 outputTextLabel.setText("Invalid Input.Please Fill all Requirements");
             }
 
-        }else {
-            outputTextLabel.setText("Phone number should 11 digits.");
-        }
+      //  }else {
+       //     outputTextLabel.setText("Phone number should 11 digits.");
+       // }
     }
     }
