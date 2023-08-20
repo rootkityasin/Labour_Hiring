@@ -131,10 +131,28 @@ public class loginController {
             ResultSet queryResult = statement.executeQuery(check);
 
             while (queryResult.next()) {
-                if (queryResult.getInt(1) == 1) {
-                    message_label.setText("Welcome!");
-                } else {
-                    message_label.setText("Wrong Username or Password. Please try again.");
+                if (adminRadioButton.isSelected()){
+                    if (queryResult.getInt(1) == 1) {
+                        message_label.setText("Welcome!");
+                    } else {
+                        message_label.setText("Wrong Username or Password. Please try again.");
+                    }
+
+                }
+                else if(userRadioButton.isSelected()){
+                    if (queryResult.getInt(1) == 1) {
+                        message_label.setText("Welcome!");
+                    } else {
+                        message_label.setText("Wrong Username or Password. Please try again.");
+                    }
+
+                }
+                else if(workerRadioButton.isSelected()){
+                    if (queryResult.getInt(1) == 1) {
+                        message_label.setText("Welcome!");
+                    } else {
+                        message_label.setText("Wrong Username or Password. Please try again.");
+                    }
                 }
 
             }
@@ -149,8 +167,8 @@ public class loginController {
             void onActionSignupButton (ActionEvent event){
                 try {
                     FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("signUp.fxml"));
-                    Parent root2 = fxmlLoader.load();
-                    SignUp.getScene().setRoot(root2);
+                    Parent root = fxmlLoader.load();
+                    SignUp.getScene().setRoot(root);
                 } catch (IOException e) {
                     e.printStackTrace();
                 }

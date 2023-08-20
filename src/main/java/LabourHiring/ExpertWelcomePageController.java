@@ -29,13 +29,10 @@ public class ExpertWelcomePageController {
 
     @FXML
     private Circle profilePicCircle;
-    @FXML
-    private AnchorPane onAnchor;
-    @FXML
-    private Button messageSendButton;
 
     @FXML
-    private TextField messageTextField;
+    private Button messaging;
+
 
     void profileDetailsPage() {
         try {
@@ -63,14 +60,17 @@ public class ExpertWelcomePageController {
             e.printStackTrace();
         }
     }
-
     @FXML
-    void onActionmessageTextField(ActionEvent event) {
+    void onActionMessaging(ActionEvent event) {
+        try {
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("hello-view.fxml"));
+            Parent root1 = fxmlLoader.load();
+            messaging.getScene().setRoot(root1);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
     }
-    @FXML
-    void onActionMessageSendButton(ActionEvent event) {
 
-    }
 
 }
