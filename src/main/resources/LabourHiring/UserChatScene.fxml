@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LabourHiring.UserChatController">
+    <children>
+        <TextArea fx:id="area" editable="false" layoutX="20.0" layoutY="26.0" prefHeight="293.0" prefWidth="432.0">
+            <font>
+                <Font size="20.0" />
+            </font></TextArea>
+        <TextField fx:id="tx" layoutX="20.0" layoutY="348.0" prefHeight="31.0" prefWidth="432.0" promptText="Enter Your Name" />
+        <Button fx:id="button" layoutX="470.0" layoutY="348.0" mnemonicParsing="false" onAction="#buttonAction" prefHeight="31.0" prefWidth="107.0" text="Connect">
+            <font>
+                <Font name="Candara Bold" size="15.0" />
+            </font>
+        </Button>
+        <Button fx:id="backbutton" layoutX="501.0" layoutY="26.0" mnemonicParsing="false" onAction="#onActionBackButtonUser" prefHeight="31.0" prefWidth="66.0" text="Back" />
+    </children>
+</Pane>
