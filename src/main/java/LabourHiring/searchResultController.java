@@ -33,7 +33,7 @@ public class searchResultController {
     @FXML
     void onActionMessagingButton(ActionEvent event) {
         try {
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("hello-view.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("UserChatScene.fxml"));
             Parent root1 = fxmlLoader.load();
             messagingButton.getScene().setRoot(root1);
         } catch (IOException e) {

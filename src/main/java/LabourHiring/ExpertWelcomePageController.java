@@ -63,7 +63,7 @@ public class ExpertWelcomePageController {
     @FXML
     void onActionMessaging(ActionEvent event) {
         try {
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("hello-view.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("ExpertiseChatScene.fxml"));
             Parent root1 = fxmlLoader.load();
             messaging.getScene().setRoot(root1);
         } catch (IOException e) {

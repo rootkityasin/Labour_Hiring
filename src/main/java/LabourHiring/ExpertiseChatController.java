@@ -11,7 +11,7 @@ import java.io.*;
 import java.net.Socket;
 import java.net.SocketException;
 
-public class HelloController {
+public class ExpertiseChatController {
     @FXML
     private TextField tx;
 
@@ -19,7 +19,7 @@ public class HelloController {
     private TextArea area ;
 
     @FXML
-    private Button backbutton;
+    private Button backbuttonExpertise;
 
     @FXML
     private Button button ;
@@ -28,12 +28,11 @@ public class HelloController {
     BufferedWriter writer;
     BufferedReader reader;
     @FXML
-    void onActionBackButton(ActionEvent event) {
+    void onActionBackButtonExpertise(ActionEvent event) {
         try {
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("UserWelcomePage.fxml"));
-            //FXMLLoader fxmlLoader2 = new FXMLLoader(getClass().getResource("ExpertWelcomePage.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("ExpertWelcomePage.fxml"));
             Parent root1 = fxmlLoader.load();
-            backbutton.getScene().setRoot(root1);
+            backbuttonExpertise.getScene().setRoot(root1);
         } catch (IOException e) {
             e.printStackTrace();
         }
