@@ -24,6 +24,7 @@
       <Text fx:id="text4" layoutX="307.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Choose Your Area :" />
       <Text fx:id="text5" layoutX="307.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address5" />
       <Text fx:id="text6" layoutX="14.0" layoutY="191.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Town / City" wrappingWidth="67.40087890625" />
+<<<<<<< HEAD
       <TextField fx:id="expertName" layoutX="10.0" layoutY="50.0" prefHeight="31.0" prefWidth="286.0" style="-fx-background-radius: 10px;" />
       <TextField fx:id="expertEmail" layoutX="307.0" layoutY="50.0" prefHeight="31.0" prefWidth="286.0" style="-fx-background-radius: 10px;" />
       <TextField fx:id="expertPhoneNum" layoutX="14.0" layoutY="120.0" prefHeight="31.0" prefWidth="268.0" style="-fx-background-radius: 10px;" />
@@ -38,6 +39,19 @@
          <font>
             <Font name="Arial Black" size="12.0" />
          </font></Label>
+=======
+      <TextField fx:id="expertName" layoutX="10.0" layoutY="50.0" prefHeight="31.0" prefWidth="286.0" />
+      <TextField fx:id="expertEmail" layoutX="307.0" layoutY="50.0" prefHeight="31.0" prefWidth="286.0" />
+      <TextField fx:id="expertPhoneNum" layoutX="14.0" layoutY="120.0" prefHeight="31.0" prefWidth="268.0" />
+      <TextField fx:id="expertDetailsAddress" layoutX="307.0" layoutY="118.0" prefHeight="66.0" prefWidth="268.0" />
+      <ChoiceBox fx:id="cityChoiceBox" layoutX="14.0" layoutY="195.0" prefWidth="150.0" />
+      <Button fx:id="saveButton" layoutX="194.0" layoutY="321.0" mnemonicParsing="false" onAction="#onActionSaveButton" prefHeight="26.0" prefWidth="86.0" text="Save" />
+      <Button fx:id="editButton" layoutX="321.0" layoutY="321.0" mnemonicParsing="false" onAction="#onActionEditButton" prefHeight="26.0" prefWidth="86.0" text="Edit" />
+      <Button fx:id="BackButton" layoutX="499.0" layoutY="359.0" mnemonicParsing="false" onAction="#onActionBackButton" prefHeight="26.0" prefWidth="86.0" text="Back" />
+      <ChoiceBox fx:id="areaChoiceBox1" layoutX="307.0" layoutY="208.0" prefWidth="150.0" />
+      <Label fx:id="outputTextLabel" alignment="CENTER" layoutX="147.0" layoutY="263.0" prefHeight="26.0" prefWidth="307.0" text="Please Fill All Information" />
+      <Label fx:id="label1" layoutX="14.0" layoutY="236.0" prefHeight="26.0" prefWidth="190.0" style="-fx-background-color: LightSeaGreen; -fx-background-radius: 10px;" text="Choose Your Expertise's Category" />
+>>>>>>> f384714c610dea409e6b58d952806cdee8da54b5
       <RadioButton fx:id="radioboxElectrician" layoutX="14.0" layoutY="267.0" mnemonicParsing="false" text="Electrician" />
       <RadioButton fx:id="radioboxPainter" layoutX="15.0" layoutY="292.0" mnemonicParsing="false" text="Painter" />
       <RadioButton fx:id="radioboxCarpenter" layoutX="15.0" layoutY="317.0" mnemonicParsing="false" text="Carpenter" />
