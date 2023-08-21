@@ -32,6 +32,8 @@ public class ExpertWelcomePageController {
 
     @FXML
     private Button messaging;
+    @FXML
+    private ImageView backgroundimage;
 
 
     void profileDetailsPage() {

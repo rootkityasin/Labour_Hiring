@@ -6,6 +6,7 @@ import javafx.scene.Parent;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
+import javafx.scene.image.ImageView;
 
 import java.io.*;
 import java.net.Socket;
@@ -23,6 +24,8 @@ public class ExpertiseChatController {
 
     @FXML
     private Button button ;
+    @FXML
+    private ImageView backgroundImage;
 
     boolean isConnected = false ;
     BufferedWriter writer;

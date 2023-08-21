@@ -6,6 +6,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.control.*;
+import javafx.scene.image.ImageView;
 import javafx.scene.text.Text;
 
 import java.io.IOException;
@@ -77,6 +78,8 @@ public class expertProfilePageController implements Initializable {
 
     @FXML
     private RadioButton radioboxPainter;
+    @FXML
+    private ImageView backgroundPic;
 
     @FXML
     private TextField zipField;

@@ -16,6 +16,7 @@ public class signUp extends Application {
             stage.setTitle("Sign Up Page");
             stage.setScene(scene);
             stage.show();
+            stage.setResizable(false);
         }
 
         public static void main(String[] args) {

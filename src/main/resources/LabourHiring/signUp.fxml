@@ -25,7 +25,7 @@
             <Font name="BM DoHyeon OTF" size="18.0" />
          </font>
       </Label>
-      <TextField fx:id="userNameTextfield" alignment="CENTER" layoutX="169.0" layoutY="153.0" onKeyPressed="#onActionNameField" prefHeight="30.0" prefWidth="270.0" promptText="Enter Your Full Name">
+      <TextField fx:id="userNameTextfield" alignment="CENTER" layoutX="169.0" layoutY="153.0" onKeyPressed="#onActionNameField" prefHeight="30.0" prefWidth="270.0" promptText="Enter Your Full Name" style="-fx-background-radius: 10px;">
          <font>
             <Font size="14.0" />
          </font></TextField>
@@ -33,12 +33,12 @@
          <image>
             <Image url="@Project Image/icons8-user-50.png" />
          </image></ImageView>
-      <TextField fx:id="userEmailTextfield" alignment="CENTER" layoutX="169.0" layoutY="213.0" onKeyPressed="#onActionEmailField" prefHeight="30.0" prefWidth="270.0" promptText="Enter Your Email">
+      <TextField fx:id="userEmailTextfield" alignment="CENTER" layoutX="169.0" layoutY="213.0" onKeyPressed="#onActionEmailField" prefHeight="30.0" prefWidth="270.0" promptText="Enter Your Email" style="-fx-background-radius: 10px;">
          <font>
             <Font size="14.0" />
          </font>
       </TextField>
-      <TextField fx:id="userPassTextfield" alignment="CENTER" layoutX="169.0" layoutY="268.0" onKeyPressed="#onActionPassField" prefHeight="30.0" prefWidth="270.0" promptText="Enter New  Password">
+      <TextField fx:id="userPassTextfield" alignment="CENTER" layoutX="169.0" layoutY="268.0" onKeyPressed="#onActionPassField" prefHeight="30.0" prefWidth="270.0" promptText="Enter New  Password" style="-fx-background-radius: 10px;">
          <font>
             <Font size="14.0" />
          </font>
@@ -52,11 +52,11 @@
             <Image url="@Project Image/key.png" />
          </image></ImageView>
       <ChoiceBox fx:id="choiceBox" layoutX="287.0" layoutY="312.0" opacity="0.68" prefHeight="30.0" prefWidth="90.0" style="-fx-background-color: Honeydew; -fx-background-position: center;" />
-      <Button fx:id="signUpButton" layoutX="237.0" layoutY="354.0" mnemonicParsing="false" onAction="#onActionsignUp" prefHeight="30.0" prefWidth="90.0" text="Sign Up">
+      <Button fx:id="signUpButton" layoutX="237.0" layoutY="354.0" mnemonicParsing="false" onAction="#onActionsignUp" prefHeight="30.0" prefWidth="90.0" style="-fx-background-radius: 10px; -fx-background-color: DodgerBlue;" text="Sign Up">
          <font>
             <Font size="15.0" />
          </font></Button>
-      <Button fx:id="backButton" layoutX="521.0" layoutY="22.0" mnemonicParsing="false" onAction="#onActionBackButton" prefWidth="70.0" text="Back&lt;-">
+      <Button fx:id="backButton" layoutX="504.0" layoutY="21.0" mnemonicParsing="false" onAction="#onActionBackButton" prefHeight="30.0" prefWidth="82.0" style="-fx-background-color: black; -fx-background-radius: 10px;" text="Back" textFill="WHITE">
          <font>
             <Font size="14.0" />
          </font>

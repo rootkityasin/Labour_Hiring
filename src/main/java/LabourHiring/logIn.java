@@ -20,7 +20,7 @@ public class logIn extends Application {
         stage.setTitle("Welcome Expert Hiring");
         stage.setScene(scene);
         stage.show();
-        //primaryStage1.setResizable(false);
+        stage.setResizable(false);
 
     }
 
