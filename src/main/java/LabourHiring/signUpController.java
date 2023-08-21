@@ -64,7 +64,7 @@ public class signUpController implements Initializable {
     @FXML
     private Label signUpLabel;
 
-    private String[] items = {"Admin", "Worker", "User"};
+    private String[] items = {"Admin", "Expertise", "User"};
 
     @FXML
     void onActionNameField(KeyEvent event) {
