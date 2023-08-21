@@ -16,7 +16,7 @@
       <Circle fx:id="adminprofile" fill="#d7e3ee" layoutX="97.0" layoutY="54.0" radius="30.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.1" />
       <ImageView fx:id="adminProfileImage" fitHeight="46.0" fitWidth="43.0" layoutX="76.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@Project%20Image/signupUserLogo.png" />
+            <Image url="@Project Image/signupUserLogo.png" />
          </image>
       </ImageView>
       <Button fx:id="adminProfileButton" layoutX="52.0" layoutY="97.0" mnemonicParsing="false" onAction="#onActionAdminProfileButton" style="-fx-background-color: SteelBlue;" text="Admin Profile" />
@@ -24,7 +24,7 @@
       <Button fx:id="databaseButton" layoutX="360.0" layoutY="123.0" mnemonicParsing="false" onAction="#onActionDatabaseButton" prefHeight="77.0" prefWidth="99.0" />
       <ImageView fx:id="databaseLabelImage" fitHeight="77.0" fitWidth="99.0" layoutX="382.0" layoutY="123.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@Project%20Image/database.png" />
+            <Image url="@Project Image/database.png" />
          </image>
       </ImageView>
       <Label fx:id="manageDatabaseLabel" layoutX="349.0" layoutY="200.0" prefHeight="19.0" prefWidth="121.0" text="Manage Database">

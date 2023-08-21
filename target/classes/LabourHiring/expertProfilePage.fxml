@@ -5,28 +5,39 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.RadioButton?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LabourHiring.expertProfilePageController">
    <children>
+      <ImageView fx:id="backgroundPic" fitHeight="400.0" fitWidth="600.0" opacity="0.7" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Project Image/7.jpeg" />
+         </image>
+      </ImageView>
       <Text fx:id="text1" layoutX="14.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Your Full Name1" />
       <Text fx:id="text2" layoutX="307.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Your Email 2" />
       <Text fx:id="text3" layoutX="14.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Your Phone Number3" />
       <Text fx:id="text4" layoutX="307.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Choose Your Area :" />
       <Text fx:id="text5" layoutX="307.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address5" />
       <Text fx:id="text6" layoutX="14.0" layoutY="191.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Town / City" wrappingWidth="67.40087890625" />
-      <TextField fx:id="expertName" layoutX="10.0" layoutY="50.0" prefHeight="31.0" prefWidth="286.0" />
-      <TextField fx:id="expertEmail" layoutX="307.0" layoutY="50.0" prefHeight="31.0" prefWidth="286.0" />
-      <TextField fx:id="expertPhoneNum" layoutX="14.0" layoutY="120.0" prefHeight="31.0" prefWidth="268.0" />
-      <TextField fx:id="expertDetailsAddress" layoutX="307.0" layoutY="118.0" prefHeight="66.0" prefWidth="268.0" />
-      <ChoiceBox fx:id="cityChoiceBox" layoutX="14.0" layoutY="195.0" prefWidth="150.0" />
-      <Button fx:id="saveButton" layoutX="194.0" layoutY="321.0" mnemonicParsing="false" onAction="#onActionSaveButton" prefHeight="26.0" prefWidth="86.0" text="Save" />
-      <Button fx:id="editButton" layoutX="321.0" layoutY="321.0" mnemonicParsing="false" onAction="#onActionEditButton" prefHeight="26.0" prefWidth="86.0" text="Edit" />
-      <Button fx:id="BackButton" layoutX="499.0" layoutY="359.0" mnemonicParsing="false" onAction="#onActionBackButton" prefHeight="26.0" prefWidth="86.0" text="Back" />
-      <ChoiceBox fx:id="areaChoiceBox1" layoutX="307.0" layoutY="208.0" prefWidth="150.0" />
-      <Label fx:id="outputTextLabel" alignment="CENTER" layoutX="147.0" layoutY="263.0" prefHeight="26.0" prefWidth="307.0" text="Please Fill All Information" />
-      <Label fx:id="label1" layoutX="14.0" layoutY="236.0" prefHeight="26.0" prefWidth="190.0" style="-fx-background-color: LightSeaGreen; -fx-background-radius: 10px;" text="Choose Your Expertise's Category" />
+      <TextField fx:id="expertName" layoutX="10.0" layoutY="50.0" prefHeight="31.0" prefWidth="286.0" style="-fx-background-radius: 10px;" />
+      <TextField fx:id="expertEmail" layoutX="307.0" layoutY="50.0" prefHeight="31.0" prefWidth="286.0" style="-fx-background-radius: 10px;" />
+      <TextField fx:id="expertPhoneNum" layoutX="14.0" layoutY="120.0" prefHeight="31.0" prefWidth="268.0" style="-fx-background-radius: 10px;" />
+      <TextField fx:id="expertDetailsAddress" layoutX="307.0" layoutY="118.0" prefHeight="66.0" prefWidth="268.0" style="-fx-background-radius: 10px;" />
+      <ChoiceBox fx:id="cityChoiceBox" layoutX="14.0" layoutY="195.0" prefWidth="150.0" style="-fx-background-radius: 10px;" />
+      <Button fx:id="saveButton" layoutX="196.0" layoutY="294.0" mnemonicParsing="false" onAction="#onActionSaveButton" prefHeight="31.0" prefWidth="86.0" style="-fx-background-radius: 10px; -fx-background-color: DodgerBlue;" text="Save" />
+      <Button fx:id="editButton" layoutX="253.0" layoutY="344.0" mnemonicParsing="false" onAction="#onActionEditButton" prefHeight="31.0" prefWidth="86.0" style="-fx-background-color: Gray; -fx-background-radius: 10px;" text="Edit" textFill="WHITE" />
+      <Button fx:id="BackButton" layoutX="307.0" layoutY="294.0" mnemonicParsing="false" onAction="#onActionBackButton" prefHeight="31.0" prefWidth="86.0" style="-fx-background-radius: 10px; -fx-background-color: black;" text="Back" textFill="WHITE" />
+      <ChoiceBox fx:id="areaChoiceBox1" layoutX="307.0" layoutY="208.0" prefWidth="150.0" style="-fx-background-radius: 10px;" />
+      <Label fx:id="outputTextLabel" layoutX="154.0" layoutY="263.0" prefHeight="26.0" prefWidth="307.0" />
+      <Label fx:id="label1" layoutX="14.0" layoutY="236.0" prefHeight="26.0" prefWidth="227.0" style="-fx-background-color: LightSlateGray; -fx-background-radius: 10px;" text="Choose Your Expertise's Category">
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font></Label>
       <RadioButton fx:id="radioboxElectrician" layoutX="14.0" layoutY="267.0" mnemonicParsing="false" text="Electrician" />
       <RadioButton fx:id="radioboxPainter" layoutX="15.0" layoutY="292.0" mnemonicParsing="false" text="Painter" />
       <RadioButton fx:id="radioboxCarpenter" layoutX="15.0" layoutY="317.0" mnemonicParsing="false" text="Carpenter" />
