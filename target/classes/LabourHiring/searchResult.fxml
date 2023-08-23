@@ -2,7 +2,9 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LabourHiring.searchResultController">
@@ -14,5 +16,10 @@
       </Label>
       <Button fx:id="messagingButton" layoutX="228.0" layoutY="309.0" mnemonicParsing="false" onAction="#onActionMessagingButton" text="Messaging With Expertise" />
       <Button fx:id="backButton" layoutX="264.0" layoutY="349.0" mnemonicParsing="false" onAction="#onActionBackButton" prefHeight="26.0" prefWidth="74.0" text="Back" />
+      <VBox fx:id="vBox1" layoutX="74.0" layoutY="85.0" prefHeight="200.0" prefWidth="454.0">
+         <children>
+            <TableView fx:id="myTable" prefHeight="200.0" prefWidth="200.0" />
+         </children>
+      </VBox>
    </children>
 </AnchorPane>

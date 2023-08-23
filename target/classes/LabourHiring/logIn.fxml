@@ -44,7 +44,7 @@
             <Font size="14.0" />
          </font>
       </PasswordField>
-      <Label fx:id="message_label" alignment="TOP_CENTER" layoutX="106.0" layoutY="320.0" prefHeight="27.0" prefWidth="417.0" textFill="#8d0c0c">
+      <Label fx:id="message_label" alignment="TOP_CENTER" layoutX="106.0" layoutY="289.0" prefHeight="27.0" prefWidth="417.0" textFill="#8d0c0c">
          <font>
             <Font size="14.0" />
          </font></Label>

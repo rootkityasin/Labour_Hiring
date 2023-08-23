@@ -18,11 +18,11 @@
             <Image url="@Project Image/7.jpeg" />
          </image>
       </ImageView>
-      <Text fx:id="text1" layoutX="14.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Your Full Name1" />
-      <Text fx:id="text2" layoutX="307.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Your Email 2" />
-      <Text fx:id="text3" layoutX="14.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Your Phone Number3" />
+      <Text fx:id="text1" layoutX="14.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Your Full Name" />
+      <Text fx:id="text2" layoutX="307.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Your Email " />
+      <Text fx:id="text3" layoutX="14.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Your Phone Number" />
       <Text fx:id="text4" layoutX="307.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Choose Your Area :" />
-      <Text fx:id="text5" layoutX="307.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address5" />
+      <Text fx:id="text5" layoutX="307.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address" />
       <Text fx:id="text6" layoutX="14.0" layoutY="191.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Town / City" wrappingWidth="67.40087890625" />
       <TextField fx:id="expertName" layoutX="10.0" layoutY="50.0" prefHeight="31.0" prefWidth="286.0" style="-fx-background-radius: 10px;" />
       <TextField fx:id="expertEmail" layoutX="307.0" layoutY="50.0" prefHeight="31.0" prefWidth="286.0" style="-fx-background-radius: 10px;" />

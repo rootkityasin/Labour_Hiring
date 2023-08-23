@@ -15,6 +15,7 @@ public class ExpertiseChatScene extends Application {
         stage.setTitle("Messenger");
         stage.setScene(scene);
         stage.show();
+
     }
 
     public static void main(String[] args) {

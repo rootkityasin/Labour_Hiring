@@ -17,6 +17,7 @@ public class adminWelcomePage extends Application {
         stage.setTitle("Welcome Admin");
         stage.setScene(scene);
         stage.show();
+
     }
 
     public static void main(String[] args) {
