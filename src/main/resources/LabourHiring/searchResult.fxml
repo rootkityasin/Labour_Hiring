@@ -16,9 +16,9 @@
       </Label>
       <Button fx:id="messagingButton" layoutX="228.0" layoutY="309.0" mnemonicParsing="false" onAction="#onActionMessagingButton" text="Messaging With Expertise" />
       <Button fx:id="backButton" layoutX="264.0" layoutY="349.0" mnemonicParsing="false" onAction="#onActionBackButton" prefHeight="26.0" prefWidth="74.0" text="Back" />
-      <VBox layoutX="74.0" layoutY="85.0" prefHeight="200.0" prefWidth="454.0">
+      <VBox fx:id="vBox1" layoutX="74.0" layoutY="85.0" prefHeight="200.0" prefWidth="454.0">
          <children>
-            <TableView prefHeight="200.0" prefWidth="200.0" />
+            <TableView fx:id="myTable" prefHeight="200.0" prefWidth="200.0" />
          </children>
       </VBox>
    </children>
