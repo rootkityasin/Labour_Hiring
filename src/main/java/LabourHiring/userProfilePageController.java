@@ -79,7 +79,6 @@ public class userProfilePageController {
 
     public void userProfileDB() {
 
-        //connecting DB using DatabaseConnection class
         DatabaseConnection connect_project = new DatabaseConnection();
         Connection connect_database = connect_project.getConnection();
 

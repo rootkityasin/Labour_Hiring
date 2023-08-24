@@ -159,7 +159,7 @@ public class expertProfilePageController implements Initializable {
                 String insertExpertDB = "SET sql_mode='STRICT_ALL_TABLES'";
                 Statement statement = connect_database.createStatement();
                 statement.executeUpdate(insertExpertDB);
-                insertExpertDB = "INSERT INTO workerinfo(name,email,phone,address,city,area,workercategory) VALUES('" + expertName.getText() + "','" + expertEmail.getText() + "','" + expertPhoneNum.getText() + "','" + expertDetailsAddress.getText() + "','" + cityChoiceBox.getValue() + "','" + areaChoiceBox1.getValue() + "','"+ worker_category +"')";
+                insertExpertDB = "INSERT INTO workerinfo(Name,Email,Phone,Address,City,Area,Category) VALUES('" + expertName.getText() + "','" + expertEmail.getText() + "','" + expertPhoneNum.getText() + "','" + expertDetailsAddress.getText() + "','" + cityChoiceBox.getValue() + "','" + areaChoiceBox1.getValue() + "','"+ worker_category +"')";
                 statement.executeUpdate(insertExpertDB);
                 outputTextLabel.setText("Your Profile is Now complete");
 

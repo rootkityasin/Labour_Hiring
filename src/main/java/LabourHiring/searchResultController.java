@@ -1,20 +1,30 @@
 package LabourHiring;
 
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
+import javafx.collections.transformation.FilteredList;
+import javafx.collections.transformation.SortedList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.control.*;
-import javafx.scene.control.cell.PropertyValueFactory;
-import javafx.scene.layout.GridPane;
-import javafx.scene.layout.VBox;
 
 import java.io.IOException;
 import java.net.URL;
-import java.util.ArrayList;
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
 import java.util.ResourceBundle;
-import java.util.jar.Attributes;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
+import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.util.Callback;
+import javafx.scene.control.TableCell;
 
 public class searchResultController implements  Initializable {
 
@@ -25,11 +35,35 @@ public class searchResultController implements  Initializable {
     private Button messagingButton;
     @FXML
     private Button backButton;
-    @FXML
-    private TableView<?> myTable;
 
     @FXML
-    private VBox vBox1;
+    private TableView<searchmodel> myTable;
+
+    @FXML
+    private TextField searchBoxfield;
+
+    @FXML
+    private TableColumn<searchmodel, String> tableAddress;
+
+    @FXML
+    private TableColumn<searchmodel, String> tableCategory;
+
+    @FXML
+    private TableColumn<searchmodel, String> tableArea;
+
+    @FXML
+    private TableColumn<?, ?> tableClick;
+
+    @FXML
+    private TableColumn<searchmodel, String> tableEmail;
+
+    @FXML
+    private TableColumn<searchmodel, String> tableName;
+
+    @FXML
+    private TableColumn<searchmodel, String> tablePhone;
+
+
 
 
     @FXML
@@ -58,12 +92,68 @@ public class searchResultController implements  Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        TableColumn name = new TableColumn("Name");
-        TableColumn num = new TableColumn("Mobile Number");
-        TableColumn email = new TableColumn("E-mail");
-        TableColumn click = new TableColumn("Click Here");
+        ObservableList<searchmodel> searchlist= FXCollections.observableArrayList();
 
-        myTable.getColumns().addAll(name,num,email,click);
+        DatabaseConnection connectNow = new DatabaseConnection ();
+        Connection connectDB = connectNow.getConnection();
+        String searchQuery ="SELECT Name,Phone,Email,Address,Area,Category FROM workerinfo";
+
+
+
+        try {
+            Statement statement = connectDB.createStatement();
+            ResultSet queryOutput = statement.executeQuery(searchQuery);
+            while (queryOutput.next()) {
+                String queryname = queryOutput.getString("Name");
+                Integer queryphone = queryOutput.getInt("Phone");
+                String queryemail = queryOutput.getString("Email");
+                String queryaddress = queryOutput.getString("Address");
+                String queryarea = queryOutput.getString("Area");
+                String querycategory = queryOutput.getString("Category");
+
+                searchlist.add(new searchmodel(queryname,queryphone,queryemail,queryaddress,queryarea,querycategory));
+
+            }
+
+
+            tableName.setCellValueFactory(new PropertyValueFactory<>("Name"));
+            tablePhone.setCellValueFactory(new PropertyValueFactory<>("Phone"));
+            tableEmail.setCellValueFactory(new PropertyValueFactory<>("Email"));
+            tableAddress.setCellValueFactory(new PropertyValueFactory<>("Address"));
+            tableArea.setCellValueFactory(new PropertyValueFactory<>("Area"));
+            tableCategory.setCellValueFactory(new PropertyValueFactory<>("Category"));
+
+
+
+           myTable.setItems(searchlist);
+
+            FilteredList<searchmodel> filteredData = new FilteredList<>(searchlist,b ->true);
+                    searchBoxfield.textProperty().addListener((observable,oldValue,newValue)->{
+                        filteredData.setPredicate(searchmodel -> {
+                            if (newValue.isEmpty() || newValue.isBlank() || newValue == null) {
+                                return true;
+                            }
+                            String searchKeyword = newValue.toLowerCase();
+
+                            if (searchmodel.getCategory().toLowerCase().contains(searchKeyword)) {
+                                return true;
+                            } else if (searchmodel.getArea().toLowerCase().contains(searchKeyword)) {
+                                return true;
+                            } else
+                                return false;
+                        });
+                    });
+            SortedList<searchmodel> sortedData = new SortedList <>(filteredData);
+            sortedData.comparatorProperty().bind(myTable.comparatorProperty());
+            myTable.setItems(sortedData);
+
+
+            }catch(SQLException e) {
+            Logger.getLogger(searchmodel.class.getName()).log(Level.SEVERE, null, e);
+            e.printStackTrace();
+        }
+
+
 
     }
 }
