@@ -115,6 +115,7 @@ public class loginController {
         }
         else if(userRadioButton.isSelected()){
              check = "SELECT count(1) FROM user WHERE email='" + userEmail.getText() + "' AND password='" + UserPassword.getText() + "'";
+
         }
 
         else if(workerRadioButton.isSelected()){

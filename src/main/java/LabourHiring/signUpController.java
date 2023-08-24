@@ -125,7 +125,7 @@ public class signUpController implements Initializable {
 
             insertDB = "INSERT INTO Admin(name,email,password) VALUES('" + userNameTextfield.getText() + "','" + userEmailTextfield.getText() + "','" + userPassTextfield.getText() + "')";
 
-        } else if (choiceBox.getValue().equals("Worker")) {
+        } else if (choiceBox.getValue().equals("Expertise")) {
              insertDB = "INSERT INTO worker(name,email,password) VALUES('" + userNameTextfield.getText() + "','" + userEmailTextfield.getText() + "','" + userPassTextfield.getText() + "')";
 
         }
@@ -135,7 +135,7 @@ public class signUpController implements Initializable {
         else{
             signUpLabel.setText("Please Choose a Category");
         }
-
+        System.out.println(insertDB);
 
         try {
 
