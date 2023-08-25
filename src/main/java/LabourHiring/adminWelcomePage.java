@@ -13,7 +13,7 @@ public class adminWelcomePage extends Application {
     public void start(Stage stage) throws Exception {
         Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("adminWelcomePage.fxml")));
         Scene scene = new Scene(root);
-        stage.setTitle("Welcome Admin");
+        //stage.setTitle("Welcome Admin");
         stage.setScene(scene);
         stage.setResizable(false);
         stage.show();

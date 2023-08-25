@@ -13,7 +13,7 @@ public class signUp extends Application {
     public void start(Stage stage) throws Exception {
            Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("signUp.fxml")));
             Scene scene = new Scene(root);
-            stage.setTitle("Sign Up Page");
+            //stage.setTitle("Sign Up Page");
             stage.setScene(scene);
             stage.show();
             stage.setResizable(false);

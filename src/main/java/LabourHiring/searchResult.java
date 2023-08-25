@@ -15,8 +15,9 @@ public class searchResult extends Application {
     public void start(Stage stage) throws Exception {
         Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("searchResult.fxml")));
         Scene scene = new Scene(root);
-        stage.setTitle("Searching Expertise");
+        //stage.setTitle("Searching Expertise");
         stage.setScene(scene);
+        stage.setResizable(false);
         stage.show();
     }
 

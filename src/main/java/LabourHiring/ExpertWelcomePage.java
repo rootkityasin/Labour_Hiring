@@ -14,7 +14,7 @@ public class ExpertWelcomePage extends Application {
 
         Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("ExpertWelcomePage.fxml")));
         Scene scene = new Scene(root);
-        stage.setTitle("Welcome As An Expert");
+        //stage.setTitle("Welcome As An Expert");
         stage.setScene(scene);
         stage.setResizable(false);
         stage.show();
