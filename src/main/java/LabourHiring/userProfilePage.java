@@ -15,6 +15,7 @@ public class userProfilePage extends Application {
         Scene scene = new Scene(root);
         stage.setTitle("Welcome To User Profile");
         stage.setScene(scene);
+        stage.setResizable(false);
         stage.show();
     }
 

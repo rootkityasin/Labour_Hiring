@@ -15,6 +15,7 @@ public class expertProfilePage extends Application {
         Scene scene = new Scene(root);
         stage.setTitle("Expert Profile");
         stage.setScene(scene);
+        stage.setResizable(false);
         stage.show();
     }
 

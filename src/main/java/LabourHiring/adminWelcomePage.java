@@ -13,9 +13,9 @@ public class adminWelcomePage extends Application {
     public void start(Stage stage) throws Exception {
         Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("adminWelcomePage.fxml")));
         Scene scene = new Scene(root);
-        // primaryStage.setFullScreen(true);
         stage.setTitle("Welcome Admin");
         stage.setScene(scene);
+        stage.setResizable(false);
         stage.show();
 
     }
