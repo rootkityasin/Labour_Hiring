@@ -13,7 +13,7 @@ public class userProfilePage extends Application {
     public void start(Stage stage) throws Exception {
         Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("userProfilePage.fxml")));
         Scene scene = new Scene(root);
-        stage.setTitle("Welcome To User Profile");
+        //stage.setTitle("Welcome To User Profile");
         stage.setScene(scene);
         stage.setResizable(false);
         stage.show();

@@ -15,7 +15,7 @@ public class UserWelcomePage extends Application {
     public void start(Stage stage) throws Exception {
         Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("UserWelcomePage.fxml")));
         Scene scene = new Scene(root);
-        stage.setTitle("Welcome User");
+        //stage.setTitle("Welcome User");
         stage.setScene(scene);
         stage.setResizable(false);
         stage.show();

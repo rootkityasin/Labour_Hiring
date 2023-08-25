@@ -17,7 +17,7 @@ public class logIn extends Application {
         primaryStage1 = stage;
         Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("logIn.fxml")));
         Scene scene = new Scene(root);
-        stage.setTitle("Welcome Expert Hiring");
+        //stage.setTitle("Welcome Expert Hiring");
         stage.setScene(scene);
         stage.show();
         stage.setResizable(false);
