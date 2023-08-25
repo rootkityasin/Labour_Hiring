@@ -23,9 +23,6 @@ public class UserChatSceneController {
     private Button backbutton;
 
     @FXML
-    private ImageView backgroundImage;
-
-    @FXML
     private Button button;
 
     @FXML
@@ -113,7 +110,7 @@ public class UserChatSceneController {
     @FXML
     void onActionBackButtonUser(ActionEvent event) {
         try {
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("UserWelcomePage.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("searchResult.fxml"));
             Parent root1 = fxmlLoader.load();
             backbutton.getScene().setRoot(root1);
         } catch (IOException e) {

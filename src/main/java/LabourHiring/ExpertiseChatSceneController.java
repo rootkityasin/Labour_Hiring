@@ -1,5 +1,6 @@
 package LabourHiring;
 
+import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -19,10 +20,7 @@ public class ExpertiseChatSceneController {
     private TextArea area;
 
     @FXML
-    private Button backbuttonExpertise;
-
-    @FXML
-    private ImageView backgroundImage;
+    private Button exitButton;
 
     @FXML
     private Button button;
@@ -109,15 +107,8 @@ public class ExpertiseChatSceneController {
     }
 
     @FXML
-    void onActionBackButtonExpertise(ActionEvent event) {
-        try {
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("ExpertWelcomePage.fxml"));
-            Parent root1 = fxmlLoader.load();
-            backbuttonExpertise.getScene().setRoot(root1);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
+    void onActionExitButtonExpertise(ActionEvent event) {
+        Platform.exit();
     }
 
 }
