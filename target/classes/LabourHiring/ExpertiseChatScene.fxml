@@ -25,6 +25,6 @@
                 <Font name="Candara Bold" size="15.0" />
             </font>
         </Button>
-        <Button fx:id="backbuttonExpertise" layoutX="503.0" layoutY="26.0" mnemonicParsing="false" onAction="#onActionBackButtonExpertise" prefHeight="31.0" prefWidth="74.0" style="-fx-background-color: black; -fx-background-radius: 10px;" text="Back" textFill="WHITE" />
+        <Button fx:id="exitButton" layoutX="503.0" layoutY="26.0" mnemonicParsing="false" onAction="#onActionExitButtonExpertise" prefHeight="31.0" prefWidth="74.0" style="-fx-background-color: black; -fx-background-radius: 10px;" text="Exit" textFill="WHITE" />
     </children>
 </Pane>
