@@ -25,6 +25,7 @@ import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.util.Callback;
 import javafx.scene.control.TableCell;
+import javafx.application.Platform;
 
 public class searchResultController implements  Initializable {
 
@@ -68,13 +69,15 @@ public class searchResultController implements  Initializable {
 
     @FXML
     void onActionBackButton(ActionEvent event) {
-        try {
+     /*   try {
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("UserWelcomePage.fxml"));
             Parent root1 = fxmlLoader.load();
             backButton.getScene().setRoot(root1);
         } catch (IOException e) {
             e.printStackTrace();
         }
+        */
+      Platform.exit();
 
     }
 
