@@ -17,7 +17,7 @@ public class UserWelcomePage extends Application {
         Scene scene = new Scene(root);
         //stage.setTitle("Welcome User");
         stage.setScene(scene);
-        stage.setResizable(false);
+        //stage.setResizable(false);
         stage.show();
     }
 

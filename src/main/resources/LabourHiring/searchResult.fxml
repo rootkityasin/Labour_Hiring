@@ -9,7 +9,11 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
+<<<<<<< HEAD
 <AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LabourHiring.searchResultController">
+=======
+<AnchorPane prefHeight="800.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LabourHiring.searchResultController">
+>>>>>>> 6527a698922fffb842943c84ee78d07e119288a9
    <children>
       <Label fx:id="lable1" contentDisplay="CENTER" layoutX="229.0" layoutY="14.0" prefHeight="43.0" prefWidth="355.0" style="-fx-background-color: skyblue; -fx-background-radius: 10px;" text="Available Eexpertise" textAlignment="CENTER" underline="true">
          <font>
@@ -17,17 +21,17 @@
          </font>
       </Label>
       <Button fx:id="messagingButton" layoutX="349.0" layoutY="517.0" mnemonicParsing="false" onAction="#onActionMessagingButton" text="Messaging With Expertise" />
-      <Button fx:id="backButton" layoutX="391.0" layoutY="553.0" mnemonicParsing="false" onAction="#onActionBackButton" prefHeight="26.0" prefWidth="74.0" text="Back" />
-      <VBox fx:id="vBox1" layoutX="26.0" layoutY="125.0" prefHeight="377.0" prefWidth="761.0">
+      <Button fx:id="backButton" layoutX="391.0" layoutY="553.0" mnemonicParsing="false" onAction="#onActionBackButton" prefHeight="26.0" prefWidth="74.0" text="Exit" />
+      <VBox fx:id="vBox1" layoutX="26.0" layoutY="125.0" prefHeight="377.0" prefWidth="739.0">
          <children>
-            <TableView fx:id="myTable" prefHeight="394.0" prefWidth="761.0">
+            <TableView fx:id="myTable" prefHeight="377.0" prefWidth="742.0">
                <columns>
                   <TableColumn fx:id="tableName" prefWidth="90.0" text="Name" />
-                  <TableColumn fx:id="tablePhone" prefWidth="114.0" text="Phone" />
-                  <TableColumn fx:id="tableEmail" prefWidth="114.0" text="Email" />
-                  <TableColumn fx:id="tableAddress" prefWidth="160.0" text="Address" />
-                  <TableColumn fx:id="tableArea" prefWidth="86.0" text="Area" />
-                  <TableColumn fx:id="tableCategory" prefWidth="125.0" text="Category" />
+                  <TableColumn fx:id="tablePhone" prefWidth="122.0" text="Phone" />
+                  <TableColumn fx:id="tableEmail" prefWidth="124.0" text="Email" />
+                  <TableColumn fx:id="tableAddress" prefWidth="156.0" text="Address" />
+                  <TableColumn fx:id="tableArea" prefWidth="112.0" text="Area" />
+                  <TableColumn fx:id="tableCategory" prefWidth="133.0" text="Category" />
                </columns>
             </TableView>
          </children>

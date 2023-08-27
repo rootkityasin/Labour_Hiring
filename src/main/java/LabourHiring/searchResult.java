@@ -14,10 +14,10 @@ public class searchResult extends Application {
     @Override
     public void start(Stage stage) throws Exception {
         Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("searchResult.fxml")));
-        Scene scene = new Scene(root);
+        Scene scene = new Scene(root);//,700,400);
         //stage.setTitle("Searching Expertise");
         stage.setScene(scene);
-        stage.setResizable(false);
+      //stage.setResizable(true);
         stage.show();
     }
 

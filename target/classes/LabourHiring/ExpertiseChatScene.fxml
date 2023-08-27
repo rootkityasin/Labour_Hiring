@@ -6,6 +6,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
+<<<<<<< HEAD
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #1A5276;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LabourHiring.ChatSceneController">
     <children>
         <TextField fx:id="tx" layoutX="7.0" layoutY="388.0" prefHeight="31.0" prefWidth="318.0" promptText="Enter Your Name" style="-fx-background-radius: 10px;" />
@@ -14,10 +15,21 @@
                 <Font size="20.0" />
             </font></TextArea>
         <Button fx:id="button" layoutX="326.0" layoutY="388.0" mnemonicParsing="false" onAction="#buttonAction" prefHeight="31.0" prefWidth="74.0" style="-fx-background-color: DeepSkyBlue; -fx-background-radius: 10px;" text="Connect">
+=======
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="800.0" style="-fx-background-color: #1A5276;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LabourHiring.ExpertiseChatSceneController">
+    <children>
+        <TextField fx:id="tx" layoutX="93.0" layoutY="481.0" prefHeight="31.0" prefWidth="432.0" promptText="Enter Your Name" style="-fx-background-radius: 10px;" />
+        <TextArea fx:id="area" editable="false" layoutX="93.0" layoutY="103.0" prefHeight="343.0" prefWidth="483.0">
+            <font>
+                <Font size="20.0" />
+            </font></TextArea>
+        <Button fx:id="button" layoutX="558.0" layoutY="481.0" mnemonicParsing="false" onAction="#buttonAction" prefHeight="31.0" prefWidth="107.0" style="-fx-background-color: DeepSkyBlue; -fx-background-radius: 10px;" text="Connect">
+>>>>>>> 6527a698922fffb842943c84ee78d07e119288a9
             <font>
                 <Font name="Candara Bold" size="15.0" />
             </font>
         </Button>
+<<<<<<< HEAD
         <Button fx:id="exitButton" layoutX="381.0" layoutY="479.0" mnemonicParsing="false" onAction="#onActionExitButtonExpertise" prefHeight="31.0" prefWidth="88.0" style="-fx-background-color: black; -fx-background-radius: 10px;" text="Exit" textFill="WHITE" />
       <TextArea fx:id="area1" editable="false" layoutX="425.0" layoutY="103.0" prefHeight="257.0" prefWidth="366.0">
          <font>
@@ -30,5 +42,8 @@
             <Font name="Candara Bold" size="15.0" />
          </font>
       </Button>
+=======
+        <Button fx:id="exitButton" layoutX="612.0" layoutY="103.0" mnemonicParsing="false" onAction="#onActionExitButtonExpertise" prefHeight="31.0" prefWidth="74.0" style="-fx-background-color: black; -fx-background-radius: 10px;" text="Exit" textFill="WHITE" />
+>>>>>>> 6527a698922fffb842943c84ee78d07e119288a9
     </children>
 </Pane>
