@@ -10,6 +10,7 @@ import java.sql.Connection;
 
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
+import javafx.scene.layout.Pane;
 
 import java.io.IOException;
 import java.sql.ResultSet;
@@ -22,6 +23,8 @@ public class loginController {
 
     @FXML
     private Button SignUp;
+    @FXML
+    private Pane pane;
 
     @FXML
     private TextField UserPassword;

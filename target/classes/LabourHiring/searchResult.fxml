@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="593.0" prefWidth="806.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LabourHiring.searchResultController">
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LabourHiring.searchResultController">
    <children>
       <Label fx:id="lable1" contentDisplay="CENTER" layoutX="229.0" layoutY="14.0" prefHeight="43.0" prefWidth="355.0" style="-fx-background-color: skyblue; -fx-background-radius: 10px;" text="Available Eexpertise" textAlignment="CENTER" underline="true">
          <font>

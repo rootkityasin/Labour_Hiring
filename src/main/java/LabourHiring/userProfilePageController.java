@@ -19,8 +19,6 @@ public class userProfilePageController {
     private Button backButton;
 
     @FXML
-    private Button editButton;
-    @FXML
     private TextField fullAddress;
     @FXML
     private Button saveButton;
@@ -67,10 +65,6 @@ public class userProfilePageController {
 
     }
 
-    @FXML
-    void onActionEditButton(ActionEvent event) {
-
-    }
 
     @FXML
     void onActionSaveButton(ActionEvent event) {

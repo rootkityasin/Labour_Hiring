@@ -1,48 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.ChoiceBox?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.RadioButton?>
-<?import javafx.scene.control.SplitPane?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.shape.Circle?>
-<?import javafx.scene.text.Font?>
 
-<AnchorPane accessibleRole="BUTTON" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: none;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LabourHiring.UserWelcomePageController">
+<AnchorPane accessibleRole="BUTTON" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #D7E0E6; -fx-background-radius: 10px;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LabourHiring.UserWelcomePageController">
    <children>
-      <ImageView fx:id="bacgroundImage" fitHeight="400.0" fitWidth="600.0" opacity="0.32" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@Project Image/rsz_hi.jpeg" />
-         </image>
-      </ImageView>
-      <SplitPane fx:id="panel1" prefHeight="400.0" prefWidth="182.0" style="-fx-background-color: DarkSeaGreen;" />
-      <Button fx:id="logoutButton" layoutX="35.0" layoutY="342.0" mnemonicParsing="false" onAction="#onActionLogoutButton" prefHeight="26.0" prefWidth="89.0" style="-fx-background-color: SteelBlue;" text="Log Out" textFill="#3b3939" />
-      <Circle fx:id="profilePicCircle" fill="#98bde1" layoutX="80.0" layoutY="62.0" opacity="0.94" radius="33.0" smooth="false" stroke="BLACK" strokeLineCap="ROUND" strokeType="INSIDE" strokeWidth="0.0" />
-      <ImageView fx:id="profileImage" fitHeight="45.0" fitWidth="59.0" layoutX="58.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@Project Image/userIconEmailtextField.png" />
-         </image>
-      </ImageView>
-      <Button fx:id="userProfileButton" layoutX="41.0" layoutY="105.0" mnemonicParsing="false" onAction="#onActionInProfileButton" style="-fx-background-color: SteelBlue;" text="User Profile" />
-      <ChoiceBox fx:id="choiceBoxLocation" layoutX="322.0" layoutY="257.0" prefWidth="150.0" />
-      <Button fx:id="SearchButton" alignment="CENTER" layoutX="300.0" layoutY="342.0" mnemonicParsing="false" onAction="#onActionSearchButton" prefHeight="26.0" prefWidth="118.0" style="-fx-background-color: DodgerBlue;" text="Search" />
-      <Label fx:id="chooseWorker" alignment="CENTER" contentDisplay="CENTER" layoutX="226.0" layoutY="29.0" prefHeight="38.0" prefWidth="266.0" style="-fx-background-color: MediumAquamarine;" text="Choose Expertise" textAlignment="CENTER">
-         <font>
-            <Font size="13.0" />
-         </font>
-      </Label>
-      <Label fx:id="chooseArea" alignment="CENTER" contentDisplay="CENTER" layoutX="212.0" layoutY="257.0" prefHeight="26.0" prefWidth="110.0" style="-fx-background-color: SlateBlue;" text="Choose Area" textAlignment="CENTER">
-         <font>
-            <Font size="13.0" />
-         </font>
-      </Label>
-      <RadioButton fx:id="radiobuttonElectrician" layoutX="278.0" layoutY="76.0" mnemonicParsing="false" text="Electrician" />
-      <RadioButton fx:id="radiobuttonPainter" layoutX="278.0" layoutY="109.0" mnemonicParsing="false" text="Painter" />
-      <RadioButton fx:id="radiobuttonCarpenter" layoutX="278.0" layoutY="140.0" mnemonicParsing="false" text="Carpenter" />
-      <RadioButton fx:id="radiobuttonMechanic" layoutX="278.0" layoutY="169.0" mnemonicParsing="false" text="Mechanic" />
-      <RadioButton fx:id="radiobuttonGardener" layoutX="277.0" layoutY="200.0" mnemonicParsing="false" text="Gardener" />
+      <Pane fx:id="pane" prefHeight="600.0" prefWidth="300.0" style="-fx-background-color: #C6DEFF; -fx-background-radius: 10px;">
+         <children>
+            <Button fx:id="logoutButton" layoutX="100.0" layoutY="527.0" mnemonicParsing="false" onAction="#onActionLogoutButton" prefHeight="36.0" prefWidth="100.0" style="-fx-background-color: SteelBlue;" text="Log Out" textFill="#3b3939" />
+            <Button fx:id="userProfileButton" layoutX="97.0" layoutY="119.0" mnemonicParsing="false" onAction="#onActionInProfileButton" prefHeight="36.0" prefWidth="100.0" style="-fx-background-color: SteelBlue;" text="User Profile" />
+            <Circle fx:id="profilePicCircle" fill="#98bde1" layoutX="147.0" layoutY="70.0" opacity="0.94" radius="33.0" smooth="false" stroke="BLACK" strokeLineCap="ROUND" strokeType="INSIDE" strokeWidth="0.0" />
+            <ImageView fx:id="profileImage" fitHeight="45.0" fitWidth="59.0" layoutX="125.0" layoutY="48.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Project Image/userIconEmailtextField.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Button fx:id="SearchButton" alignment="CENTER" layoutX="452.0" layoutY="278.0" mnemonicParsing="false" onAction="#onActionSearchButton" prefHeight="45.0" prefWidth="221.0" style="-fx-background-color: DodgerBlue;" text="Click To Get Your RequieR Expertise" />
    </children>
 </AnchorPane>
