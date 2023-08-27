@@ -4,6 +4,7 @@ import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 
@@ -15,6 +16,13 @@ public class ChatSceneController {
 
     @FXML
     private TextArea area;
+
+
+    @FXML
+    private Label label;
+
+    @FXML
+    private Label lable2;
 
     @FXML
     private TextArea area1;
