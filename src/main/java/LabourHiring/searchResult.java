@@ -17,7 +17,7 @@ public class searchResult extends Application {
         Scene scene = new Scene(root);//,700,400);
         //stage.setTitle("Searching Expertise");
         stage.setScene(scene);
-      //stage.setResizable(true);
+      stage.setResizable(true);
         stage.show();
     }
 

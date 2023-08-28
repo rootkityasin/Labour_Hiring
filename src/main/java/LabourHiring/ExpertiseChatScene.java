@@ -14,7 +14,7 @@ public class ExpertiseChatScene extends Application {
         Scene scene = new Scene(fxmlLoader.load());
         //stage.setTitle("Messenger");
         stage.setScene(scene);
-        stage.setResizable(false);
+        stage.setResizable(true);
         stage.show();
     }
 
