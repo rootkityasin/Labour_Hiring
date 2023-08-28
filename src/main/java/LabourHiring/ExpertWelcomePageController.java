@@ -9,6 +9,7 @@ import javafx.scene.control.SplitPane;
 import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.Pane;
 import javafx.scene.shape.Circle;
 
 import java.io.IOException;
@@ -22,7 +23,10 @@ public class ExpertWelcomePageController {
     private Button logoutButton;
 
     @FXML
-    private SplitPane panel1;
+    private Pane pane;
+
+    @FXML
+    private ImageView messageImage;
 
     @FXML
     private ImageView profileImage;

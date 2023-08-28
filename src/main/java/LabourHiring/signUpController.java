@@ -12,6 +12,7 @@ import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
+import javafx.scene.layout.Pane;
 
 import java.io.IOException;
 import java.net.URL;
@@ -24,6 +25,9 @@ public class signUpController implements Initializable {
 
     @FXML
     private Button backButton;
+
+    @FXML
+    private Pane pane;
 
     @FXML
     private ImageView backgroundPicture;

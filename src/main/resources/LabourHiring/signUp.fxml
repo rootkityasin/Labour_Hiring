@@ -7,65 +7,76 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LabourHiring.signUpController">
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LabourHiring.signUpController">
    <children>
-      <ImageView fx:id="backgroundPicture" fitHeight="400.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="backgroundPicture" fitHeight="600.0" fitWidth="800.0" opacity="0.88" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@Project Image/rsz_1pawel-czerwinski-qiy4hr18ags-unsplash.jpg" />
+            <Image url="@Project Image/l.jpeg" />
          </image>
       </ImageView>
-      <ImageView fx:id="signUpLogo" fitHeight="50.0" fitWidth="45.0" layoutX="251.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@Project Image/signupUserLogo.png" />
-         </image></ImageView>
-      <Label fx:id="createAccountLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="203.0" layoutY="67.0" text="Create a Account">
-         <font>
-            <Font name="BM DoHyeon OTF" size="18.0" />
-         </font>
-      </Label>
-      <TextField fx:id="userNameTextfield" alignment="CENTER" layoutX="169.0" layoutY="153.0" onKeyPressed="#onActionNameField" prefHeight="30.0" prefWidth="270.0" promptText="Enter Your Full Name" style="-fx-background-radius: 10px;">
-         <font>
-            <Font size="14.0" />
-         </font></TextField>
-      <ImageView fx:id="userNameLogo" fitHeight="26.0" fitWidth="24.0" layoutX="145.0" layoutY="156.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@Project Image/icons8-user-50.png" />
-         </image></ImageView>
-      <TextField fx:id="userEmailTextfield" alignment="CENTER" layoutX="169.0" layoutY="213.0" onKeyPressed="#onActionEmailField" prefHeight="30.0" prefWidth="270.0" promptText="Enter Your Email" style="-fx-background-radius: 10px;">
-         <font>
-            <Font size="14.0" />
-         </font>
-      </TextField>
-      <TextField fx:id="userPassTextfield" alignment="CENTER" layoutX="169.0" layoutY="268.0" onKeyPressed="#onActionPassField" prefHeight="30.0" prefWidth="270.0" promptText="Enter New  Password" style="-fx-background-radius: 10px;">
-         <font>
-            <Font size="14.0" />
-         </font>
-      </TextField>
-      <ImageView fx:id="userEmailLogo" fitHeight="24.0" fitWidth="34.0" layoutX="145.0" layoutY="216.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@Project Image/email.png" />
-         </image></ImageView>
-      <ImageView fx:id="userPassLogo" fitHeight="26.0" fitWidth="24.0" layoutX="145.0" layoutY="271.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@Project Image/key.png" />
-         </image></ImageView>
-      <ChoiceBox fx:id="choiceBox" layoutX="287.0" layoutY="312.0" opacity="0.68" prefHeight="30.0" prefWidth="90.0" style="-fx-background-color: Honeydew; -fx-background-position: center;" />
-      <Button fx:id="signUpButton" layoutX="237.0" layoutY="354.0" mnemonicParsing="false" onAction="#onActionsignUp" prefHeight="30.0" prefWidth="90.0" style="-fx-background-radius: 10px; -fx-background-color: DodgerBlue;" text="Sign Up">
-         <font>
-            <Font size="15.0" />
-         </font></Button>
-      <Button fx:id="backButton" layoutX="504.0" layoutY="21.0" mnemonicParsing="false" onAction="#onActionBackButton" prefHeight="30.0" prefWidth="82.0" style="-fx-background-color: black; -fx-background-radius: 10px;" text="Back" textFill="WHITE">
+      <Pane fx:id="pane" layoutX="192.0" layoutY="43.0" prefHeight="501.0" prefWidth="416.0">
+         <children>
+            <Label fx:id="createAccountLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="159.0" layoutY="82.0" text="Create a Account">
+               <font>
+                  <Font name="BM DoHyeon OTF" size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="signUpButton" layoutX="164.0" layoutY="439.0" mnemonicParsing="false" onAction="#onActionsignUp" prefHeight="30.0" prefWidth="90.0" style="-fx-background-radius: 10px; -fx-background-color: DodgerBlue;" text="Sign Up">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Label fx:id="signupCatagory" alignment="CENTER" layoutX="91.0" layoutY="362.0" prefHeight="30.0" prefWidth="118.0" style="-fx-background-color: white; -fx-font-weight: bold;" text="Choose Catagory" textFill="#180303">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <ChoiceBox fx:id="choiceBox" layoutX="209.0" layoutY="362.0" opacity="0.68" prefHeight="30.0" prefWidth="90.0" style="-fx-background-color: Honeydew; -fx-background-position: center;" />
+            <TextField fx:id="userPassTextfield" alignment="CENTER" layoutX="119.0" layoutY="301.0" onKeyPressed="#onActionPassField" prefHeight="30.0" prefWidth="270.0" promptText="Enter New  Password" style="-fx-background-radius: 10px;">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <ImageView fx:id="userPassLogo" fitHeight="26.0" fitWidth="24.0" layoutX="92.0" layoutY="298.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Project Image/key.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="userEmailTextfield" alignment="CENTER" layoutX="116.0" layoutY="236.0" onKeyPressed="#onActionEmailField" prefHeight="30.0" prefWidth="270.0" promptText="Enter Your Email" style="-fx-background-radius: 10px;">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <ImageView fx:id="userEmailLogo" fitHeight="24.0" fitWidth="34.0" layoutX="92.0" layoutY="239.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Project Image/email.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="userNameTextfield" alignment="CENTER" layoutX="119.0" layoutY="171.0" onKeyPressed="#onActionNameField" prefHeight="30.0" prefWidth="270.0" promptText="Enter Your Full Name" style="-fx-background-radius: 10px;">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <ImageView fx:id="userNameLogo" fitHeight="26.0" fitWidth="24.0" layoutX="95.0" layoutY="171.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Project Image/icons8-user-50.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="signUpLabel" alignment="CENTER" layoutX="154.0" layoutY="112.0" prefHeight="30.0" prefWidth="168.0" text="Please Enter Login Information" />
+            <ImageView fx:id="signUpLogo" fitHeight="50.0" fitWidth="45.0" layoutX="209.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Project Image/signupUserLogo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Button fx:id="backButton" layoutX="668.0" layoutY="51.0" mnemonicParsing="false" onAction="#onActionBackButton" prefHeight="30.0" prefWidth="82.0" style="-fx-background-color: black; -fx-background-radius: 10px;" text="Back" textFill="WHITE">
          <font>
             <Font size="14.0" />
          </font>
       </Button>
-      <Label fx:id="signupCatagory" alignment="CENTER" layoutX="169.0" layoutY="312.0" prefHeight="30.0" prefWidth="118.0" style="-fx-background-color: white; -fx-font-weight: bold;" text="Choose Catagory" textFill="#180303">
-         <font>
-            <Font size="14.0" />
-         </font>
-      </Label>
-      <Label fx:id="signUpLabel" alignment="CENTER" layoutX="198.0" layoutY="107.0" prefHeight="30.0" prefWidth="168.0" text="Please Enter Login Information" />
    </children>
 </AnchorPane>

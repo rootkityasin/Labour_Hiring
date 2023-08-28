@@ -9,6 +9,7 @@ import javafx.scene.control.*;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.HBox;
+import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
 import javafx.scene.shape.Circle;
 
@@ -16,34 +17,15 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class UserWelcomePageController implements Initializable {
+public class UserWelcomePageController {
     @FXML
     private Button SearchButton;
-    @FXML
-    private ImageView bacgroundImage;
-
-    @FXML
-    private ChoiceBox<String> choiceBoxLocation;
 
     @FXML
     private Button logoutButton;
-    @FXML
-    private RadioButton radiobuttonCarpenter;
 
     @FXML
-    private RadioButton radiobuttonElectrician;
-
-    @FXML
-    private RadioButton radiobuttonGardener;
-
-    @FXML
-    private RadioButton radiobuttonMechanic;
-
-    @FXML
-    private RadioButton radiobuttonPainter;
-
-    @FXML
-    private SplitPane panel1;
+    private Pane pane;
 
     @FXML
     private ImageView profileImage;
@@ -53,14 +35,7 @@ public class UserWelcomePageController implements Initializable {
 
     @FXML
     private Button userProfileButton;
-
-    @FXML
-    private Label chooseArea;
-
-    @FXML
-    private Label chooseWorker;
-
-    private final String[] area_names = {"Tejgaon", "Notunbazar", "Badda"};
+    //private final String[] area_names = {"Tejgaon", "Notunbazar", "Badda"};
 
 
     @FXML
@@ -102,12 +77,6 @@ public class UserWelcomePageController implements Initializable {
 
     @FXML
     void onActionchooseWorker(ActionEvent event) {
-
-    }
-
-    @Override
-    public void initialize(URL url, ResourceBundle resourceBundle) {
-        choiceBoxLocation.getItems().addAll(area_names);
 
     }
 }

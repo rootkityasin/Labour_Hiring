@@ -1,28 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.SplitPane?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.shape.Circle?>
 
-<AnchorPane accessibleRole="BUTTON" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: none;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LabourHiring.ExpertWelcomePageController">
+<AnchorPane accessibleRole="BUTTON" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #E1EAF0; -fx-background-radius: 10px;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LabourHiring.ExpertWelcomePageController">
     <children>
-      <ImageView fx:id="backgroundimage" fitHeight="400.0" fitWidth="600.0" opacity="0.9" pickOnBounds="true" preserveRatio="true">
+      <Pane fx:id="pane" prefHeight="600.0" prefWidth="300.0" style="-fx-background-color: CadetBlue; -fx-background-radius: 10px;">
+         <children>
+              <Button fx:id="logoutButton" layoutX="101.0" layoutY="531.0" mnemonicParsing="false" onAction="#onActionLogout" prefHeight="39.0" prefWidth="98.0" style="-fx-background-color: DeepSkyBlue;" text="Log Out" textFill="#3b3939" />
+              <Circle fx:id="profilePicCircle" fill="#98bde1" layoutX="156.0" layoutY="68.0" opacity="0.94" radius="33.0" smooth="false" stroke="BLACK" strokeLineCap="ROUND" strokeType="INSIDE" strokeWidth="0.0" />
+              <ImageView fx:id="profileImage" fitHeight="45.0" fitWidth="59.0" layoutX="134.0" layoutY="46.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                      <Image url="@Project Image/userIconEmailtextField.png" />
+                  </image>
+              </ImageView>
+              <Button fx:id="expertProfileButton" layoutX="107.0" layoutY="110.0" mnemonicParsing="false" onAction="#onActionInProfileButton" prefHeight="33.0" prefWidth="98.0" style="-fx-background-color: SeaGreen;" text="My Profile" />
+         </children>
+      </Pane>
+      <Button fx:id="messaging" layoutX="469.0" layoutY="287.0" mnemonicParsing="false" onAction="#onActionMessaging" prefHeight="33.0" prefWidth="147.0" style="-fx-background-radius: 10px; -fx-background-color: SteelBlue;" text="Messaging With Client" />
+      <ImageView fx:id="messageImage" fitHeight="33.0" fitWidth="36.0" layoutX="433.0" layoutY="287.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@Project Image/8.jpeg" />
+            <Image url="@Project Image/email.png" />
          </image>
       </ImageView>
-        <SplitPane fx:id="panel1" prefHeight="400.0" prefWidth="182.0" style="-fx-background-color: CadetBlue;" />
-        <Button fx:id="logoutButton" layoutX="35.0" layoutY="342.0" mnemonicParsing="false" onAction="#onActionLogout" prefHeight="26.0" prefWidth="89.0" style="-fx-background-color: DeepSkyBlue;" text="Log Out" textFill="#3b3939" />
-        <Circle fx:id="profilePicCircle" fill="#98bde1" layoutX="80.0" layoutY="62.0" opacity="0.94" radius="33.0" smooth="false" stroke="BLACK" strokeLineCap="ROUND" strokeType="INSIDE" strokeWidth="0.0" />
-        <ImageView fx:id="profileImage" fitHeight="45.0" fitWidth="59.0" layoutX="58.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
-            <image>
-                <Image url="@Project Image/userIconEmailtextField.png" />
-            </image>
-        </ImageView>
-        <Button fx:id="expertProfileButton" layoutX="32.0" layoutY="105.0" mnemonicParsing="false" onAction="#onActionInProfileButton" prefHeight="26.0" prefWidth="98.0" style="-fx-background-color: SeaGreen;" text="My Profile" />
-      <Button fx:id="messaging" layoutX="275.0" layoutY="105.0" mnemonicParsing="false" onAction="#onActionMessaging" style="-fx-background-radius: 10px; -fx-background-color: SteelBlue;" text="Messaging With Client" />
     </children>
 </AnchorPane>
