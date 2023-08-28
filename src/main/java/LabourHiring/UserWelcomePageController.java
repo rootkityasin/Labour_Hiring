@@ -71,12 +71,4 @@ public class UserWelcomePageController {
             e.printStackTrace();
         }
     }
-    @FXML
-    void onActionchooseArea(ActionEvent event) {
-    }
-
-    @FXML
-    void onActionchooseWorker(ActionEvent event) {
-
-    }
 }

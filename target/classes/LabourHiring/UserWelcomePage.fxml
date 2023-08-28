@@ -21,6 +21,6 @@
             </ImageView>
          </children>
       </Pane>
-      <Button fx:id="SearchButton" alignment="CENTER" layoutX="452.0" layoutY="278.0" mnemonicParsing="false" onAction="#onActionSearchButton" prefHeight="45.0" prefWidth="221.0" style="-fx-background-color: DodgerBlue;" text="Click To Get Your RequieR Expertise" />
+      <Button fx:id="SearchButton" alignment="CENTER" layoutX="452.0" layoutY="278.0" mnemonicParsing="false" onAction="#onActionSearchButton" prefHeight="45.0" prefWidth="221.0" style="-fx-background-color: DodgerBlue;" text="Click To Get Your Requier Expertise" />
    </children>
 </AnchorPane>

@@ -7,10 +7,10 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class ChatScene extends Application {
+public class ChatScene1 extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(ChatScene.class.getResource("ChatScene1.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(ChatScene.class.getResource("ExpertiseChatScene.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         //stage.setTitle("Messenger");
         stage.setScene(scene);

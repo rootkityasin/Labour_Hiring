@@ -8,38 +8,39 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
 import java.net.Socket;
 import java.net.SocketException;
 
-public class ChatSceneController {
+public class ChatSceneController1 {
     @FXML
-    private TextArea area1;
+    private TextArea area;
 
     @FXML
-    private Button button1;
+    private Button button;
 
     @FXML
     private Button exitButton;
 
     @FXML
-    private Label lable2;
+    private Label label;
 
     @FXML
-    private TextField tx1;
-
-
+    private TextField tx;
     boolean isConnected = false ;
     BufferedWriter writer;
     BufferedReader reader;
 
     @FXML
-    void buttonAction1() {
+    void buttonAction(ActionEvent event) {
         if (!isConnected ){
-            String data = tx1.getText();
-            tx1.clear();
+            String data = tx.getText();
+            tx.clear();
             if( data == null || data.length() == 0 ){
-                area1.appendText("Enter a valid name\n");
+                area.appendText("Enter a valid name\n");
                 return;
             }
             try {
@@ -61,10 +62,10 @@ public class ChatSceneController {
                         while (true){
                             try {
                                 String input = reader.readLine()+ "\n";
-                                area1.appendText(input);
+                                area.appendText(input);
                             }
                             catch(SocketException z){
-                                area1.appendText("Connection Lost\n");
+                                area.appendText("Connection Lost\n");
                                 break;
                             }
                             catch (Exception x){
@@ -75,9 +76,9 @@ public class ChatSceneController {
                 };
                 t.start();
 
-                area1.appendText("Connection Established.\n");
-                button1.setText("Send");
-                tx1.setPromptText("Enter a message.");
+                area.appendText("Connection Established.\n");
+                button.setText("Send");
+                tx.setPromptText("Enter a message.");
                 isConnected = true ;
             }
             catch (Exception a){
@@ -92,8 +93,8 @@ public class ChatSceneController {
         else {
 
             try {
-                String msg = tx1.getText();
-                tx1.clear();
+                String msg = tx.getText();
+                tx.clear();
 
                 if( msg == null || msg.length() == 0 ){
                     return;
@@ -110,8 +111,7 @@ public class ChatSceneController {
 
     @FXML
     void onActionExitButtonExpertise(ActionEvent event) {
-
         Platform.exit();
-    }
 
+    }
 }
